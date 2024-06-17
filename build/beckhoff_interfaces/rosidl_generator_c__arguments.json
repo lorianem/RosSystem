@@ -3,7 +3,8 @@
   "output_dir": "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:msg/Move.idl"
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:msg/Position.idl",
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/Move.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +20,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/msg/Move.idl"
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/msg/Position.idl",
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/Move.idl"
   ]
 }

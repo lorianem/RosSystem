@@ -1,0 +1,18 @@
+[0.243s] Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
+[0.267s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.377s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.378s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.381s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.432s] -- Configuring incomplete, errors occurred!
+[0.432s] See also "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles/CMakeOutput.log".
+[0.432s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.432s]   rosidl_generate_interfaces() the passed file 'msg/Move.msg' doesn't exist
+[0.432s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.432s]   '/home/student/ros_ws/RosSystem/src/beckhoff_interfaces'
+[0.433s] Call Stack (most recent call first):
+[0.433s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.433s] 
+[0.433s] [0m
+[0.436s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.439s] Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
