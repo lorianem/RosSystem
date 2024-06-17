@@ -1,0 +1,6 @@
+{
+  "package_name": "beckhoff_interfaces",
+  "non_idl_tuples": [
+    "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:msg/Move.msg"
+  ]
+}

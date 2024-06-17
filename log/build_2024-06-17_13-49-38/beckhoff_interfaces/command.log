@@ -1,0 +1,6 @@
+Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/ros_ws/RosSystem/src/beckhoff_interfaces -DCMAKE_INSTALL_PREFIX=/home/student/ros_ws/RosSystem/install/beckhoff_interfaces
+Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/student/ros_ws/RosSystem/src/beckhoff_interfaces -DCMAKE_INSTALL_PREFIX=/home/student/ros_ws/RosSystem/install/beckhoff_interfaces
+Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
+Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
+Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/beckhoff_interfaces
+Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/beckhoff_interfaces

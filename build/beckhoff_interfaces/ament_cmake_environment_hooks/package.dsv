@@ -1,0 +1,4 @@
+source;share/beckhoff_interfaces/local_setup.bash
+source;share/beckhoff_interfaces/local_setup.dsv
+source;share/beckhoff_interfaces/local_setup.sh
+source;share/beckhoff_interfaces/local_setup.zsh

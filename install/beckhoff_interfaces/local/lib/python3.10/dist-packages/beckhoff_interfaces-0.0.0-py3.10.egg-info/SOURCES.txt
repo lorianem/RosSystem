@@ -1,0 +1,6 @@
+setup.py
+beckhoff_interfaces/__init__.py
+beckhoff_interfaces.egg-info/PKG-INFO
+beckhoff_interfaces.egg-info/SOURCES.txt
+beckhoff_interfaces.egg-info/dependency_links.txt
+beckhoff_interfaces.egg-info/top_level.txt
