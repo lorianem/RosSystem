@@ -1,0 +1,9 @@
+int64 x 
+int64 y 
+int64 r
+int64 velocity
+--
+string err
+int64 val_x 
+int64 val_y 
+int64 val_r
