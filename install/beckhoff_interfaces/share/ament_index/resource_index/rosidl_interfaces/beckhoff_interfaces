@@ -1,3 +1,5 @@
+action/Move.action
+action/Move.idl
 msg/Position.idl
 msg/Position.msg
 srv/Move.idl

@@ -1,4 +1,4 @@
-int64 x 
-int64 y 
-int64 r
+float64 x 
+float64  y 
+float64  r
 

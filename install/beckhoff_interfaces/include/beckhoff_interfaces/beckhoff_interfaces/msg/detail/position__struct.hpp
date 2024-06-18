@@ -38,9 +38,9 @@ struct Position_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0ll;
-      this->y = 0ll;
-      this->r = 0ll;
+      this->x = 0.0;
+      this->y = 0.0;
+      this->r = 0.0;
     }
   }
 
@@ -50,38 +50,38 @@ struct Position_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->x = 0ll;
-      this->y = 0ll;
-      this->r = 0ll;
+      this->x = 0.0;
+      this->y = 0.0;
+      this->r = 0.0;
     }
   }
 
   // field types and members
   using _x_type =
-    int64_t;
+    double;
   _x_type x;
   using _y_type =
-    int64_t;
+    double;
   _y_type y;
   using _r_type =
-    int64_t;
+    double;
   _r_type r;
 
   // setters for named parameter idiom
   Type & set__x(
-    const int64_t & _arg)
+    const double & _arg)
   {
     this->x = _arg;
     return *this;
   }
   Type & set__y(
-    const int64_t & _arg)
+    const double & _arg)
   {
     this->y = _arg;
     return *this;
   }
   Type & set__r(
-    const int64_t & _arg)
+    const double & _arg)
   {
     this->r = _arg;
     return *this;

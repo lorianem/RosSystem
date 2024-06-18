@@ -20,9 +20,9 @@ extern "C"
 /// Struct defined in msg/Position in the package beckhoff_interfaces.
 typedef struct beckhoff_interfaces__msg__Position
 {
-  int64_t x;
-  int64_t y;
-  int64_t r;
+  double x;
+  double y;
+  double r;
 } beckhoff_interfaces__msg__Position;
 
 // Struct for a sequence of beckhoff_interfaces__msg__Position.

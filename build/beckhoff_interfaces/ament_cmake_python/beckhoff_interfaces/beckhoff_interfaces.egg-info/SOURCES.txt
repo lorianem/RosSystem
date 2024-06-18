@@ -4,7 +4,10 @@ beckhoff_interfaces.egg-info/PKG-INFO
 beckhoff_interfaces.egg-info/SOURCES.txt
 beckhoff_interfaces.egg-info/dependency_links.txt
 beckhoff_interfaces.egg-info/top_level.txt
+beckhoff_interfaces/action/__init__.py
+beckhoff_interfaces/action/_move.py
 beckhoff_interfaces/msg/__init__.py
 beckhoff_interfaces/msg/_move.py
+beckhoff_interfaces/msg/_position.py
 beckhoff_interfaces/srv/__init__.py
 beckhoff_interfaces/srv/_move.py

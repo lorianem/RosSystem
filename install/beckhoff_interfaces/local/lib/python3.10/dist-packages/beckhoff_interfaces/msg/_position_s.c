@@ -55,8 +55,8 @@ bool beckhoff_interfaces__msg__position__convert_from_py(PyObject * _pymsg, void
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->x = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->x = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // y
@@ -64,8 +64,8 @@ bool beckhoff_interfaces__msg__position__convert_from_py(PyObject * _pymsg, void
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->y = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->y = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
   {  // r
@@ -73,8 +73,8 @@ bool beckhoff_interfaces__msg__position__convert_from_py(PyObject * _pymsg, void
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->r = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->r = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -101,7 +101,7 @@ PyObject * beckhoff_interfaces__msg__position__convert_to_py(void * raw_ros_mess
   beckhoff_interfaces__msg__Position * ros_message = (beckhoff_interfaces__msg__Position *)raw_ros_message;
   {  // x
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->x);
+    field = PyFloat_FromDouble(ros_message->x);
     {
       int rc = PyObject_SetAttrString(_pymessage, "x", field);
       Py_DECREF(field);
@@ -112,7 +112,7 @@ PyObject * beckhoff_interfaces__msg__position__convert_to_py(void * raw_ros_mess
   }
   {  // y
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->y);
+    field = PyFloat_FromDouble(ros_message->y);
     {
       int rc = PyObject_SetAttrString(_pymessage, "y", field);
       Py_DECREF(field);
@@ -123,7 +123,7 @@ PyObject * beckhoff_interfaces__msg__position__convert_to_py(void * raw_ros_mess
   }
   {  // r
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->r);
+    field = PyFloat_FromDouble(ros_message->r);
     {
       int rc = PyObject_SetAttrString(_pymessage, "r", field);
       Py_DECREF(field);

@@ -70,6 +70,11 @@ CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_inte
 CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/Move.srv
 CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Move_Request.msg
 CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Move_Response.msg
+CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/action/Move.action
+CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 
 beckhoff_interfaces: CMakeFiles/beckhoff_interfaces
 beckhoff_interfaces: CMakeFiles/beckhoff_interfaces.dir/build.make

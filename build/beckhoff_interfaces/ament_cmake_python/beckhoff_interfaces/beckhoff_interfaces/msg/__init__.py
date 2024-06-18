@@ -1,1 +1,1 @@
-from beckhoff_interfaces.msg._move import Move  # noqa: F401
+from beckhoff_interfaces.msg._position import Position  # noqa: F401

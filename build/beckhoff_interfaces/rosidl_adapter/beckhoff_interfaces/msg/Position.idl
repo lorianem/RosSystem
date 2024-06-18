@@ -6,11 +6,11 @@
 module beckhoff_interfaces {
   module msg {
     struct Position {
-      int64 x;
+      double x;
 
-      int64 y;
+      double y;
 
-      int64 r;
+      double r;
     };
   };
 };

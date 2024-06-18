@@ -12,6 +12,7 @@ setup.py
 beckhoff/Communication.py
 beckhoff/__init__.py
 beckhoff/command.py
+beckhoff/listenerPos.py
 resource/beckhoff
 test/test_copyright.py
 test/test_flake8.py

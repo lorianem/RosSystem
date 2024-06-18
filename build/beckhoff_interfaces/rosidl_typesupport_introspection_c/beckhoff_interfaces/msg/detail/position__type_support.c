@@ -34,7 +34,7 @@ void beckhoff_interfaces__msg__Position__rosidl_typesupport_introspection_c__Pos
 static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__msg__Position__rosidl_typesupport_introspection_c__Position_message_member_array[3] = {
   {
     "x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__ms
   },
   {
     "y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -68,7 +68,7 @@ static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__ms
   },
   {
     "r",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

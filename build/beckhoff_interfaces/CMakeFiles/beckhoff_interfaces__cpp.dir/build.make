@@ -74,6 +74,10 @@ CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/sr
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__builder.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__struct.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__traits.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__builder.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__struct.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__traits.hpp
 
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,14 @@ rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/msg/Position.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/srv/Move.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/action/Move.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -116,7 +128,23 @@ rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__struct.hpp: rosidl_gen
 rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__traits.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/detail/move__traits.hpp
 
+rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__builder.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__builder.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__struct.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__struct.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__traits.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__traits.hpp
+
 beckhoff_interfaces__cpp: CMakeFiles/beckhoff_interfaces__cpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__builder.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__struct.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__traits.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/msg/detail/position__builder.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/msg/detail/position__struct.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/msg/detail/position__traits.hpp

@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from beckhoff_interfaces/action/Move.action
+// generated code does not contain a copyright notice
+
+
+module beckhoff_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Request")
+    struct Move_Goal {
+      double x;
+
+      double y;
+
+      double r;
+
+      double velocity;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Move_Result {
+      double pos_x;
+
+      double pos_y;
+
+      double pos_r;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Move_Feedback {
+      string err;
+
+      double val_x;
+
+      double val_y;
+
+      double val_r;
+    };
+  };
+};

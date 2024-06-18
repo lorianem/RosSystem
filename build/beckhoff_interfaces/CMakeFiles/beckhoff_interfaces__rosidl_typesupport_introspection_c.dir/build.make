@@ -79,17 +79,31 @@ rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosi
 rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: rosidl_adapter/beckhoff_interfaces/msg/Position.idl
 rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: rosidl_adapter/beckhoff_interfaces/srv/Move.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: rosidl_adapter/beckhoff_interfaces/action/Move.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
 rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c
 
 rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c
+
+rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c
 
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c.o: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c
@@ -119,23 +133,45 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_ty
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c.s
 
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o: rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o -MF CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o.d -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o -c /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c
+
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c > CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.i
+
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.s
+
 # Object files for target beckhoff_interfaces__rosidl_typesupport_introspection_c
 beckhoff_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c.o" \
-"CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c.o"
+"CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c.o" \
+"CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o"
 
 # External object files for target beckhoff_interfaces__rosidl_typesupport_introspection_c
 beckhoff_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c.o
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__type_support.c.o
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c.o
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: libbeckhoff_interfaces__rosidl_generator_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libbeckhoff_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,6 +182,8 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/clean
 
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__rosidl_typesupport_introspection_c.h
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/beckhoff_interfaces/action/detail/move__type_support.c
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/beckhoff_interfaces/msg/detail/position__type_support.c
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/move__rosidl_typesupport_introspection_c.h

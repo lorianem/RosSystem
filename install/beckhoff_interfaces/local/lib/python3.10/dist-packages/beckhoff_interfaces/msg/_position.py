@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -61,24 +63,24 @@ class Position(metaclass=Metaclass_Position):
     ]
 
     _fields_and_field_types = {
-        'x': 'int64',
-        'y': 'int64',
-        'r': 'int64',
+        'x': 'double',
+        'y': 'double',
+        'r': 'double',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.x = kwargs.get('x', int())
-        self.y = kwargs.get('y', int())
-        self.r = kwargs.get('r', int())
+        self.x = kwargs.get('x', float())
+        self.y = kwargs.get('y', float())
+        self.r = kwargs.get('r', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -131,10 +133,10 @@ class Position(metaclass=Metaclass_Position):
     def x(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'x' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'x' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'x' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'x' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._x = value
 
     @builtins.property
@@ -146,10 +148,10 @@ class Position(metaclass=Metaclass_Position):
     def y(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'y' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'y' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'y' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._y = value
 
     @builtins.property
@@ -161,8 +163,8 @@ class Position(metaclass=Metaclass_Position):
     def r(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'r' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'r' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+                isinstance(value, float), \
+                "The 'r' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'r' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._r = value
