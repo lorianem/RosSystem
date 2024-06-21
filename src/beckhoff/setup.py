@@ -22,7 +22,7 @@ setup(
         'console_scripts': [
             'Communication = beckhoff.Communication:main',
             'command = beckhoff.command:main',
-            'listener = listenerPos.command:main'
+            'listener = beckhoff.listenerPos:main'
         ],
     },
 )

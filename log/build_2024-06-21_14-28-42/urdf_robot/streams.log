@@ -1,0 +1,22 @@
+[0.970s] Invoking command in '/home/student/ros_ws/RosSystem/src/urdf_robot': PYTHONPATH=/home/student/ros_ws/RosSystem/build/urdf_robot/prefix_override:/home/student/ros_ws/RosSystem/install/urdf_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/urdf_robot build --build-base /home/student/ros_ws/RosSystem/build/urdf_robot/build install --record /home/student/ros_ws/RosSystem/build/urdf_robot/install.log --single-version-externally-managed install_data
+[1.200s] running egg_info
+[1.201s] writing ../../build/urdf_robot/urdf_robot.egg-info/PKG-INFO
+[1.201s] writing dependency_links to ../../build/urdf_robot/urdf_robot.egg-info/dependency_links.txt
+[1.201s] writing entry points to ../../build/urdf_robot/urdf_robot.egg-info/entry_points.txt
+[1.202s] writing requirements to ../../build/urdf_robot/urdf_robot.egg-info/requires.txt
+[1.202s] writing top-level names to ../../build/urdf_robot/urdf_robot.egg-info/top_level.txt
+[1.204s] reading manifest file '../../build/urdf_robot/urdf_robot.egg-info/SOURCES.txt'
+[1.205s] adding license file 'LICENSE'
+[1.205s] writing manifest file '../../build/urdf_robot/urdf_robot.egg-info/SOURCES.txt'
+[1.205s] running build
+[1.205s] running build_py
+[1.206s] running install
+[1.206s] running install_lib
+[1.207s] running install_data
+[1.207s] running install_egg_info
+[1.211s] removing '/home/student/ros_ws/RosSystem/install/urdf_robot/lib/python3.10/site-packages/urdf_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.211s] Copying ../../build/urdf_robot/urdf_robot.egg-info to /home/student/ros_ws/RosSystem/install/urdf_robot/lib/python3.10/site-packages/urdf_robot-0.0.0-py3.10.egg-info
+[1.212s] running install_scripts
+[1.232s] Installing state_publisher script to /home/student/ros_ws/RosSystem/install/urdf_robot/lib/urdf_robot
+[1.232s] writing list of installed files to '/home/student/ros_ws/RosSystem/build/urdf_robot/install.log'
+[1.271s] Invoked command in '/home/student/ros_ws/RosSystem/src/urdf_robot' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/urdf_robot/prefix_override:/home/student/ros_ws/RosSystem/install/urdf_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/urdf_robot build --build-base /home/student/ros_ws/RosSystem/build/urdf_robot/build install --record /home/student/ros_ws/RosSystem/build/urdf_robot/install.log --single-version-externally-managed install_data
