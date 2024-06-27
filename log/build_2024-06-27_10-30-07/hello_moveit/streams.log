@@ -1,0 +1,17 @@
+[0.297s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[0.376s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[0.422s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[5.566s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:[m[K In lambda function:
+[5.566s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:33:34:[m[K [01;31m[Kerror: [m[K‘[01m[KsetOrientationAroundX[m[K’ was not declared in this scope
+[5.566s]    33 |     tf2::Quaternion quaternion = [01;31m[KsetOrientationAroundX[m[K(angle_rad);
+[5.566s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.575s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group[m[K’ was not declared in this scope
+[5.575s]    39 |     [01;31m[Kmove_group[m[K.setPoseTarget(pose_goal);
+[5.575s]       |     [01;31m[K^~~~~~~~~~[m[K
+[5.582s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:39:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_goal[m[K’ was not declared in this scope
+[5.582s]    39 |     move_group.setPoseTarget([01;31m[Kpose_goal[m[K);
+[5.583s]       |                              [01;31m[K^~~~~~~~~[m[K
+[8.040s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o] Error 1
+[8.040s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[8.040s] gmake: *** [Makefile:146: all] Error 2
+[8.044s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16

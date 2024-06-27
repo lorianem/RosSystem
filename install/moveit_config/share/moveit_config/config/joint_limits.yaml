@@ -10,16 +10,21 @@ default_acceleration_scaling_factor: 0.1
 joint_limits:
   Rotation:
     has_velocity_limits: false
-    max_velocity: 0.0
+    max_velocity: 0
     has_acceleration_limits: false
-    max_acceleration: 0.0
+    max_acceleration: 0
   X_Translation:
     has_velocity_limits: true
     max_velocity: 0.5
     has_acceleration_limits: false
-    max_acceleration: 0.0
+    max_acceleration: 0
   Y_Translation:
     has_velocity_limits: true
     max_velocity: 0.5
     has_acceleration_limits: false
-    max_acceleration: 0.0
+    max_acceleration: 0
+  Z_Translation:
+    has_velocity_limits: true
+    max_velocity: 0.5
+    has_acceleration_limits: false
+    max_acceleration: 0

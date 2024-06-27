@@ -1,0 +1,3 @@
+[console_scripts]
+moveit_command = moveit_command.moveit_command:main
+

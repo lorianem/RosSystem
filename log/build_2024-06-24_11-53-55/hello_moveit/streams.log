@@ -1,0 +1,11 @@
+[0.286s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[0.417s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[2.287s] In file included from [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:4[m[K:
+[2.287s] [01m[K/opt/ros/humble/include/moveit_visual_tools/moveit_visual_tools.h:52:10:[m[K [01;31m[Kfatal error: [m[Kgraph_msgs/msg/geometry_graph.hpp: No such file or directory
+[2.287s]    52 | #include [01;31m[K<graph_msgs/msg/geometry_graph.hpp>[m[K
+[2.287s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.287s] compilation terminated.
+[2.307s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o] Error 1
+[2.307s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[2.308s] gmake: *** [Makefile:146: all] Error 2
+[2.311s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16

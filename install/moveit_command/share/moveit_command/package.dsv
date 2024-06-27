@@ -1,0 +1,3 @@
+source;share/moveit_command/hook/pythonpath.ps1
+source;share/moveit_command/hook/pythonpath.dsv
+source;share/moveit_command/hook/pythonpath.sh

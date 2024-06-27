@@ -1,0 +1,75 @@
+[0.271s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake /home/student/ros_ws/RosSystem/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/student/ros_ws/RosSystem/install/hello_moveit
+[0.356s] -- The C compiler identification is GNU 11.4.0
+[0.451s] -- The CXX compiler identification is GNU 11.4.0
+[0.461s] -- Detecting C compiler ABI info
+[0.601s] -- Detecting C compiler ABI info - done
+[0.612s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.612s] -- Detecting C compile features
+[0.613s] -- Detecting C compile features - done
+[0.617s] -- Detecting CXX compiler ABI info
+[0.756s] -- Detecting CXX compiler ABI info - done
+[0.764s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.764s] -- Detecting CXX compile features
+[0.764s] -- Detecting CXX compile features - done
+[0.775s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.958s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.156s] -- Found moveit_ros_planning_interface: 2.5.5 (/home/student/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[1.463s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.587s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.608s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.630s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.659s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.700s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.631s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.764s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.911s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.924s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.150s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.187s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.259s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.291s] -- Found Threads: TRUE  
+[3.467s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.476s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[3.547s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.782s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.956s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.612s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[5.087s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[5.316s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[5.707s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.849s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.849s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/student/ros_ws/RosSystem/src/hello_moveit/include>
+[5.850s] -- Configured cppcheck exclude dirs and/or files: 
+[5.851s] -- Added test 'lint_cmake' to check CMake code style
+[5.853s] -- Added test 'uncrustify' to check C / C++ code style
+[5.853s] -- Configured uncrustify additional arguments: 
+[5.854s] -- Added test 'xmllint' to check XML markup files
+[5.858s] -- Configuring done
+[5.895s] -- Generating done
+[5.897s] -- Build files have been written to: /home/student/ros_ws/RosSystem/build/hello_moveit
+[5.920s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake /home/student/ros_ws/RosSystem/src/hello_moveit -DCMAKE_INSTALL_PREFIX=/home/student/ros_ws/RosSystem/install/hello_moveit
+[5.922s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[6.023s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[12.879s] [100%] [32m[1mLinking CXX executable hello_moveit[0m
+[13.533s] [100%] Built target hello_moveit
+[13.554s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[13.612s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/hello_moveit
+[13.624s] -- Install configuration: ""
+[13.624s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/lib/hello_moveit/hello_moveit
+[13.624s] -- Set runtime path of "/home/student/ros_ws/RosSystem/install/hello_moveit/lib/hello_moveit/hello_moveit" to ""
+[13.624s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/path.sh
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/path.dsv
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.bash
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.sh
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.zsh
+[13.625s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.dsv
+[13.626s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/package.dsv
+[13.626s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit
+[13.626s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake
+[13.626s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake
+[13.626s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/package.xml
+[13.629s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/hello_moveit

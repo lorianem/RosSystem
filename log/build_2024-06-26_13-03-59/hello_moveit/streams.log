@@ -1,0 +1,39 @@
+[0.279s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[0.400s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[5.129s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:[m[K In lambda function:
+[5.129s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Point = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[5.129s]    26 |     msg.[01;31m[Kposition[m[K.x = 0.2;
+[5.129s]       |         [01;31m[K^~~~~~~~[m[K
+[5.129s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Point = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[5.130s]    27 |     msg.[01;31m[Kposition[m[K.y = 0.2;
+[5.130s]       |         [01;31m[K^~~~~~~~[m[K
+[5.130s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Point = struct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+[5.130s]    28 |     msg.[01;31m[Kposition[m[K.z = 0.2;
+[5.130s]       |         [01;31m[K^~~~~~~~[m[K
+[5.130s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.130s] [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:31:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::planning_interface::MoveGroupInterface::setPoseTarget(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+[5.130s]    31 |   [01;31m[Kmove_group_interface.setPoseTarget(target_pose)[m[K;
+[5.130s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[5.130s] In file included from [01m[K/home/student/ros_ws/RosSystem/src/hello_moveit/src/hello_moveit.cpp:2[m[K:
+[5.130s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:561:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::planning_interface::MoveGroupInterface::setPoseTarget(const Isometry3d&, const string&)[m[K’
+[5.130s]   561 |   bool [01;36m[KsetPoseTarget[m[K(const Eigen::Isometry3d& end_effector_pose, const std::string& end_effector_link = "");
+[5.130s]       |        [01;36m[K^~~~~~~~~~~~~[m[K
+[5.130s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:561:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ to ‘[01m[Kconst Isometry3d&[m[K’ {aka ‘[01m[Kconst Eigen::Transform<double, 3, 1>&[m[K’}
+[5.130s]   561 |   bool setPoseTarget([01;36m[Kconst Eigen::Isometry3d& end_effector_pose[m[K, const std::string& end_effector_link = "");
+[5.131s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[5.131s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:570:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::planning_interface::MoveGroupInterface::setPoseTarget(const Pose&, const string&)[m[K’
+[5.131s]   570 |   bool [01;36m[KsetPoseTarget[m[K(const geometry_msgs::msg::Pose& target, const std::string& end_effector_link = "");
+[5.131s]       |        [01;36m[K^~~~~~~~~~~~~[m[K
+[5.131s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:570:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ to ‘[01m[Kconst Pose&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >&[m[K’}
+[5.131s]   570 |   bool setPoseTarget([01;36m[Kconst geometry_msgs::msg::Pose& target[m[K, const std::string& end_effector_link = "");
+[5.131s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[5.131s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:579:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::planning_interface::MoveGroupInterface::setPoseTarget(const PoseStamped&, const string&)[m[K’
+[5.131s]   579 |   bool [01;36m[KsetPoseTarget[m[K(const geometry_msgs::msg::PoseStamped& target, const std::string& end_effector_link = "");
+[5.131s]       |        [01;36m[K^~~~~~~~~~~~~[m[K
+[5.131s] [01m[K/home/student/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:579:61:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’ to ‘[01m[Kconst PoseStamped&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::PoseStamped_<std::allocator<void> >&[m[K’}
+[5.131s]   579 |   bool setPoseTarget([01;36m[Kconst geometry_msgs::msg::PoseStamped& target[m[K, const std::string& end_effector_link = "");
+[5.131s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[7.646s] gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o] Error 1
+[7.647s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+[7.648s] gmake: *** [Makefile:146: all] Error 2
+[7.651s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/urdf_robot:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16

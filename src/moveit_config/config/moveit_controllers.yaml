@@ -4,15 +4,34 @@ moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControll
 
 moveit_simple_controller_manager:
   controller_names:
-    - robot_full_controller
+    - robot_controller
+    - robot_without_rot_controller
+    - rotation_controller
 
-  robot_full_controller:
+  robot_controller:
     type: FollowJointTrajectory
     action_ns: follow_joint_trajectory
     default: true
     joints:
+      - Z_Translation
       - X_Translation
       - Y_Translation
       - Rotation
     action_ns: follow_joint_trajectory
     default: true
+  robot_without_rot_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - Z_Translation
+      - X_Translation
+      - Y_Translation
+    action_ns: follow_joint_trajectory
+    default: true
+  rotation_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - Rotation

@@ -26,6 +26,7 @@
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/kinematics.yaml
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/initial_positions.yaml
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/robot.urdf.xacro
+/home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/ros2_controllers.yaml
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/pilz_cartesian_limits.yaml
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/joint_limits.yaml
 /home/student/ros_ws/RosSystem/install/moveit_config/share/moveit_config/config/moveit.rviz
