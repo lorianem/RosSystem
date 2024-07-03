@@ -133,8 +133,13 @@
   <joint name="Rotation" type="continuous">
     <parent link="transY_Box"/>
     <child link="Rotation_Part"/>
+
     <origin xyz="0.04 0 0"/>
   </joint>
+
+
+
+
 
 </robot>
 

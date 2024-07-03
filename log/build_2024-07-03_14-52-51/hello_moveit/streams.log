@@ -1,0 +1,25 @@
+[0.296s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[0.434s] [ 50%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[8.124s] [100%] [32m[1mLinking CXX executable hello_moveit[0m
+[8.750s] [100%] Built target hello_moveit
+[8.775s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/hello_moveit -- -j16 -l16
+[8.851s] Invoking command in '/home/student/ros_ws/RosSystem/build/hello_moveit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/hello_moveit
+[8.867s] -- Install configuration: ""
+[8.868s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/lib/hello_moveit/hello_moveit
+[8.869s] -- Set runtime path of "/home/student/ros_ws/RosSystem/install/hello_moveit/lib/hello_moveit/hello_moveit" to ""
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/package_run_dependencies/hello_moveit
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/parent_prefix_path/hello_moveit
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.sh
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/ament_prefix_path.dsv
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/path.sh
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/environment/path.dsv
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.bash
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.sh
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.zsh
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/local_setup.dsv
+[8.869s] -- Installing: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/package.dsv
+[8.869s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/ament_index/resource_index/packages/hello_moveit
+[8.870s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig.cmake
+[8.870s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/cmake/hello_moveitConfig-version.cmake
+[8.870s] -- Up-to-date: /home/student/ros_ws/RosSystem/install/hello_moveit/share/hello_moveit/package.xml
+[8.873s] Invoked command in '/home/student/ros_ws/RosSystem/build/hello_moveit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/hello_moveit

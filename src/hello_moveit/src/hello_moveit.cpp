@@ -1,18 +1,15 @@
-
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <tf2/LinearMath/Quaternion.h>
 
-
 tf2::Quaternion setOrientationAroundX(double angle_rad) {
     tf2::Quaternion q;
-    q.setRPY(angle_rad, 0, 0);  // Rotation autour de l'axe X
+    q.setRPY(angle_rad, 0, 0);  // Rotation around the X-axis
     return q;
 }
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
   // Initialize ROS and create the Node
   rclcpp::init(argc, argv);
   auto const node = std::make_shared<rclcpp::Node>(
@@ -23,26 +20,25 @@ int main(int argc, char * argv[])
   // Create a ROS logger
   auto const logger = rclcpp::get_logger("hello_moveit");
 
-  // Next step goes here
-
   // Create the MoveIt MoveGroup Interface
   using moveit::planning_interface::MoveGroupInterface;
-  auto move_group_interface = MoveGroupInterface(node, "robot");
+  auto move_group_interface = MoveGroupInterface(node, "robot_without_rot");
+
+  // Set planning time and attempts
+  move_group_interface.setPlanningTime(10.0);  // Increase planning time to 5 seconds
 
   // Set a target Pose
   auto const target_pose = []{
     geometry_msgs::msg::Pose msg;
-
+    
     msg.position.x = 0.4;
     msg.position.y = -0.3;
-    msg.position.z = 0.81;
+    msg.position.z = 0.80;
 
-    double angle_rad = 0;  // Par exemple, une rotation de 90 degrés autour de l'axe X
-    tf2::Quaternion quaternion = setOrientationAroundX(angle_rad);
-    msg.orientation.x = quaternion.x();
-    msg.orientation.y = quaternion.y();
-    msg.orientation.z = quaternion.z();
-    msg.orientation.w = quaternion.w();
+    msg.orientation.x = 0;
+    msg.orientation.y = 0;
+    msg.orientation.z = 0;
+    msg.orientation.w = 1;
 
     return msg;
   }();
@@ -59,8 +55,13 @@ int main(int argc, char * argv[])
   if(success) {
     move_group_interface.execute(plan);
   } else {
-    RCLCPP_ERROR(logger, "Planing failed!");
+    RCLCPP_ERROR(logger, "Planning failed!");
+    // Print the target pose for debugging
+    RCLCPP_ERROR(logger, "Target Pose: [x: %f, y: %f, z: %f, qx: %f, qy: %f, qz: %f, qw: %f]",
+                 target_pose.position.x, target_pose.position.y, target_pose.position.z,
+                 target_pose.orientation.x, target_pose.orientation.y, target_pose.orientation.z, target_pose.orientation.w);
   }
+
   // Shutdown ROS
   rclcpp::shutdown();
   return 0;

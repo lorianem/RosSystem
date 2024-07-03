@@ -478,9 +478,6 @@ boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.74.0
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
-//The directory containing a CMake configuration file for catkin.
-catkin_DIR:PATH=catkin_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
 
