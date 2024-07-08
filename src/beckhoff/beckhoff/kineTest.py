@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
     
 def interpolation(tc, tf, ac, dT, pi, pf):
-    print(tc, tf, ac, dT, pi, pf)
+
     t1 = np.arange(0, tc, dT)  # Acceleration phase
     t2 = np.arange(tc, tf - tc, dT)  # Constant speed phase
     t3 = np.arange(tf - tc, tf, dT) 
@@ -12,11 +12,38 @@ def interpolation(tc, tf, ac, dT, pi, pf):
     p1 = pi + 0.5 * ac * t1 ** 2
     p2 = pi + ac * tc * (t2 - (tc/2))
     p3 = pf - 0.5 * ac * (t3 - tf)** 2 
-    #plt.plot(t2,p2)
+
     time = np.concatenate((t1,t2,t3))
     pose = np.concatenate((p1,p2,p3))
     return time, pose  
 
+def affichage(tx, px, ty, py, tz, pz, vx ,vy , vz, ax, ay,az,tc, tf ):
+    
+    fig, axs = plt.subplots(3, 1, layout='constrained')
+    axs[0].plot(tx, px, label="Pos X")
+    axs[0].plot(ty, py, label="Pos Y")
+    axs[0].plot(tz, pz,label=" Pos Z")
+    axs[0].set_xlabel('Time (s)')
+    axs[0].set_ylabel('position (m)')
+    axs[0].legend()
+    
+    axs[1].plot([0, tc, tf-tc,tf], [0, vx, vx,  0], label="Vel X")
+    axs[1].plot([0, tc, tf-tc,tf], [0, vy, vy,  0], label="Vel Y")
+    axs[1].plot([0, tc, tf-tc,tf], [0, vz, vz,   0],label="Vel Z")
+    axs[1].set_xlabel('Time (s)')
+    axs[1].set_ylabel('velocity (m/s)')
+    axs[1].legend()
+    
+    axs[2].step([0, tc, tf-tc,tf], [0, ax, 0,  -ax], label="Acc X")
+    axs[2].step([0, tc, tf-tc,tf], [0, ay, 0,  -ay], label="Acc Y")
+    axs[2].step([0, tc, tf-tc,tf], [0, az, 0,  -az], label="Acc Z")
+    axs[2].set_xlabel('Time (s)')
+    axs[2].set_ylabel('Acceleration (m/s2)')
+    axs[2].legend() 
+    
+    plt.show()
+    
+    
 def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
 
     # Sample time 
@@ -116,28 +143,14 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     
     
     #Affichage 
+    affichage(tx, px, ty, py, tz, pz, vx ,vy , vz, ax, ay,az,tc, tf )
     
-    fig, axs = plt.subplots(3, 1, layout='constrained')
-    axs[0].plot(tx, px, label="Pos X")
-    axs[0].plot(ty, py, label="Pos Y")
-    axs[0].plot(tz, pz,label=" Pos Z")
-    axs[0].set_xlabel('Time (s)')
-    axs[0].set_ylabel('position (m)')
-    axs[0].legend()
+    t_axes = [tx,ty,tz]
+    p_axes = [px,py,pz]
+    v_axes = [vx,vy,vz]
+    a_axes = [ax,ay,az]
+    time = [tc,tf]
     
-    axs[1].plot([0, tc, tf-tc,tf], [0, vx, vx,  0], label="Vel X")
-    axs[1].plot([0, tc, tf-tc,tf], [0, vy, vy,  0], label="Vel Y")
-    axs[1].plot([0, tc, tf-tc,tf], [0, vz, vz,   0],label="Vel Z")
-    axs[1].set_xlabel('Time (s)')
-    axs[1].set_ylabel('velocity (m/s)')
-    axs[1].legend()
-    
-    axs[2].step([0, tc, tf-tc,tf], [0, ax, 0,  -ax], label="Acc X")
-    axs[2].step([0, tc, tf-tc,tf], [0, ay, 0,  -ay], label="Acc Y")
-    axs[2].step([0, tc, tf-tc,tf], [0, az, 0,  -az], label="Acc Z")
-    axs[2].set_xlabel('Time (s)')
-    axs[2].set_ylabel('Acceleration (m/s2)')
-    
-    plt.show()
-    
+    return (t_axes, p_axes ,v_axes , a_axes, time)
+
 kinematicPlan(0,0,0,10,2,5,0.1,0.01)
