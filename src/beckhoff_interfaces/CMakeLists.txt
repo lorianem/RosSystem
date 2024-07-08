@@ -15,7 +15,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Position.msg" 
-  "srv/Move.srv"
+  "srv/TargetPose.srv"
+  "srv/CartesianMove.srv"
   "action/Move.action"
 )
 

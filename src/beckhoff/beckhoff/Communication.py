@@ -1,4 +1,4 @@
-from beckhoff_interfaces.srv import Move
+from beckhoff_interfaces.srv import CartesianMove
 from beckhoff_interfaces.msg import Position
 import pyads
 import rclpy
@@ -34,7 +34,7 @@ class MinimalService(Node):
 
     def __init__(self):
         super().__init__('minimal_service')
-        self.srv = self.create_service(Move, 'move', self.move_callback)
+        self.srv = self.create_service(CartesianMove, 'cartesianMove', self.move_callback)
         self.publisher = self.create_publisher(Position, 'rt_position',10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -50,14 +50,14 @@ class MinimalService(Node):
     def move_callback(self, rq, rs):
         global moving, handles, attr
         rs.err = "0"
-        self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f", with a velocity of "%f"' % (rq.x,rq.y,rq.r, rq.velocity))         
-        plc.write_by_name('MAIN.PCdata', [time.time(), rq.velocity, rq.x, rq.y,rq.r], pyads.PLCTYPE_LREAL * 5)
-        plc.write_by_name('External_Setpoint.send_value', True, pyads.PLCTYPE_BOOL)
+        #self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f", with a velocity of "%f"' % (rq.x,rq.y,rq.r, rq.velocity))         
+        #plc.write_by_name('MAIN.PCdata', [time.time(), rq.velocity, rq.x, rq.y,rq.r], pyads.PLCTYPE_LREAL * 5)
+        #plc.write_by_name('External_Setpoint.send_value', True, pyads.PLCTYPE_BOOL)
         
-        moving = True
-        while moving :
-            pass    
-        rs.val_x, rs.val_y, rs.val_r  = getActualPos()
+        #moving = True
+        #while moving :
+        #    pass    
+        rs.feedback  = 'ok'
         #plc.del_device_notification(handles)
         return rs
 

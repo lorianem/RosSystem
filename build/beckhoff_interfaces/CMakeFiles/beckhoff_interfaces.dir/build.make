@@ -67,9 +67,12 @@ include CMakeFiles/beckhoff_interfaces.dir/compiler_depend.make
 include CMakeFiles/beckhoff_interfaces.dir/progress.make
 
 CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/msg/Position.msg
-CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/Move.srv
-CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Move_Request.msg
-CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Move_Response.msg
+CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/TargetPose.srv
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/TargetPose_Request.msg
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/TargetPose_Response.msg
+CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/CartesianMove.srv
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/CartesianMove_Request.msg
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/CartesianMove_Response.msg
 CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/action/Move.action
 CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl

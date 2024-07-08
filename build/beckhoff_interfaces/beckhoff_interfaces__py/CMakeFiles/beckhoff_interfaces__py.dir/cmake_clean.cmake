@@ -9,8 +9,10 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/beckhoff_interfaces/msg/_position.py"
   "../rosidl_generator_py/beckhoff_interfaces/msg/_position_s.c"
   "../rosidl_generator_py/beckhoff_interfaces/srv/__init__.py"
-  "../rosidl_generator_py/beckhoff_interfaces/srv/_move.py"
-  "../rosidl_generator_py/beckhoff_interfaces/srv/_move_s.c"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move.py"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_target_pose.py"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.c"
   "CMakeFiles/beckhoff_interfaces__py"
 )
 

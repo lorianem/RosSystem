@@ -11,6 +11,8 @@ setup.py
 ../../build/beckhoff/beckhoff.egg-info/zip-safe
 beckhoff/Communication.py
 beckhoff/__init__.py
+beckhoff/cinematicCommand.py
+beckhoff/cinematicRobot.py
 beckhoff/command.py
 beckhoff/listenerPos.py
 resource/beckhoff

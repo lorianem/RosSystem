@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from beckhoff_interfaces/srv/TargetPose.srv
+// generated code does not contain a copyright notice
+
+
+module beckhoff_interfaces {
+  module srv {
+    struct TargetPose_Request {
+      double dx;
+
+      double dy;
+
+      double dz;
+
+      double vel;
+    };
+    struct TargetPose_Response {
+      string feedback;
+    };
+  };
+};

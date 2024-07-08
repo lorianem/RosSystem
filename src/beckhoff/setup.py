@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'Communication = beckhoff.Communication:main',
             'command = beckhoff.command:main',
-            'listener = beckhoff.listenerPos:main'
+            'listener = beckhoff.listenerPos:main',
+            'plan = beckhoff.cinematicCommand:main',
         ],
     },
 )

@@ -2,7 +2,8 @@
   "package_name": "beckhoff_interfaces",
   "non_idl_tuples": [
     "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:msg/Position.msg",
-    "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:srv/Move.srv",
+    "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:srv/TargetPose.srv",
+    "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:srv/CartesianMove.srv",
     "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces:action/Move.action"
   ]
 }

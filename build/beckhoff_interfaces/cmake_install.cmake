@@ -360,7 +360,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/Move.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/TargetPose.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/CartesianMove.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -372,15 +376,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/Move.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/TargetPose.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/Move_Request.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/TargetPose_Request.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/Move_Response.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/TargetPose_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/CartesianMove.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/CartesianMove_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/beckhoff_interfaces/srv" TYPE FILE FILES "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_cmake/srv/CartesianMove_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
