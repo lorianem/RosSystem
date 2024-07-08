@@ -1,7 +1,10 @@
 float64 x 
 float64  y 
+float z
 float64  r
-float64  velocity
+float64  velX
+float64  velY
+float64  velZ
 ---
 string err
 float64  val_x 
