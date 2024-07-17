@@ -13,7 +13,7 @@ def interpolation(tc, tf, ac, dT, pi, pf):
     p2 = pi + ac * tc * (t2 - (tc/2))
     p3 = pf - 0.5 * ac * (t3 - tf)** 2 
 
-    time = np.concatenate((t1,t2,t3))
+    time = np.concatenate((t1,t2,t3))                            
     pose = np.concatenate((p1,p2,p3))
     return time, pose  
 
@@ -59,25 +59,33 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     tc = vc / ac
     
     # Define longest mouvement 
-    if dx > dy and dx > dz :
+    if abs(dx) > abs(dy) and abs(dx) > abs(dz) :
+        
+        vc = np.sign(dx) * vc
+        ac = np.sign(dx) * ac
+        
         pi_long = x
         pf_long = x + dx
         
         # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
-        
-        # Interpolation 
-        tx, px = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vx = vc
-        ax = ac
+        dl = pf_long - ( 2 * pc - pi_long)
+        print(dl)
+        if (np.sign(dx) * dl < 0):
+            tc = np.sqrt(dx / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            tx, px = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vx = vc
+            ax = ac
+        else:
+            tl = dl / vc
+            tf = tl + 2 * tc
+            tx, px = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vx = vc
+            ax = ac
+            
         # Calcule for the other axes 
         vy = dy / (tf - tc)
         ay = (vy / tc)
@@ -88,25 +96,36 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         tz, pz = interpolation(tc, tf, az,dT, z, z+dz)
         
         
-    elif dy > dx and dy > dz :
+    elif abs(dy) > abs(dx) and abs(dy) > abs(dz) :
+
+        vc = np.sign(dy) * vc
+        ac = np.sign(dy) * ac
+        
         pi_long = y
         pf_long = y + dy
         
         # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
-        
-        # Interpolation 
-        ty, py = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vy = vc
-        ay = ac
+        dl = pf_long - ( 2 * pc - pi_long)
+        if (np.sign(dy) * dl < 0):
+            # Gestion case of no constant movement 
+            tc = np.sqrt(dy / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            ty, py = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vy = vc
+            ay = ac
+        else:
+            #Calculate the time of movement at constant speed
+            tl = dl / vc
+            #Total movement time - acceleration time is equal to deceleration time.
+            tf = tl + 2 * tc
+            # Interpolation 
+            ty , py= interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vy = vc
+            ay = ac
+            
         # Calcule for the other axes 
         vx = dx / (tf - tc)
         ax = (vx / tc)
@@ -117,24 +136,36 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         tz, pz = interpolation(tc, tf, az,dT, z, z+dz)
         
     else :
-        pi_long = y
-        pf_long = y + dy
+        vc = np.sign(dz) * vc
+        ac = np.sign(dz) * ac
         
-                # calculate the lenght at the end of acceleration 
+        pi_long = z
+        pf_long = z + dz
+        
+        # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
+        dl = pf_long - ( 2 * pc - pi_long)
         
-        # Interpolation 
-        tz, pz = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vz = vc
-        az = ac
+        
+        if (np.sign(dz) * dl < 0):
+            # Gestion case of no constant movement 
+            tc = np.sqrt(dz / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            tz, pz = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vz = vc
+            az = ac
+        else:
+            #Calculate the time of movement at constant speed
+            tl = dl / vc
+            #Total movement time - acceleration time is equal to deceleration time.
+            tf = tl + 2 * tc
+            # Interpolation 
+            tz, pz = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vz = vc
+            az = ac
+            
         # Calcule for the other axes 
         vx = dx / (tf - tc)
         ax = (vx / tc)
@@ -143,6 +174,8 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         vy = dy / (tf - tc)
         ay = (vy / tc)
         ty, py = interpolation(tc, tf, ay,dT, y, y+dy)
+        print(ty, py)
+        print(tz, pz)
     
     
     #Affichage 
@@ -156,4 +189,4 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     
     return (t_axes, p_axes ,v_axes , a_axes, time)
 
-kinematicPlan(0,0,0,100,500,200,100,5000)
+kinematicPlan(0,0,0,20,-100,50,100,5000)

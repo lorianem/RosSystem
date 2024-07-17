@@ -7,6 +7,7 @@ class MinimalSubscriber(Node):
 
     def __init__(self):
         super().__init__('minimal_subscriber')
+        self.x, self.y, self.r = 0,0,0
         self.subscription = self.create_subscription(
             Position,
             'rt_position',
@@ -15,6 +16,7 @@ class MinimalSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
+        self.x, self.y, self.z = msg.x,msg.y,msg.r
         self.get_logger().info('Actual pos : x : "%f", y : "%f",r : "%f"' % (msg.x,msg.y,msg.r))
 
 

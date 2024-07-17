@@ -15,26 +15,30 @@ class MinimalClientAsync(Node):
         self.req = CartesianMove.Request()
         self.srv = self.create_service(TargetPose, 'target_pose', self.target_pose_callback)
 
-    def target_pose_callback(self, request, response):
-        future = self.send_request(100,500,250,100,100)
-        response.feedback = 'ok'
-        
+    def target_pose_callback(self, rq, rs):
+        accRef = 5000
+        self.get_logger().info('info : dx : "%f", dy : "%f",dz : "%f"' % (rq.dx,rq.dy,rq.dz))
+        future = self.send_request(rq.dx,rq.dy,rq.dz,rq.vel,accRef)
+        rs.feedback = 'ok'
+        return rs
 
-        return response
+    
     def send_request(self,dx, dy,dz, vel, acc):
-        x, y, z = 0.0,0.0,0.0
+        x, y, z = 50.0,300.0,0.0
         t_axes, p_axes, v_axes, a_axes, time = kinematicPlan (x,y,z, dx,dy,dz, vel, acc)
-        self.req.x = p_axes[0]
-        self.req.y = p_axes[1]
-        self.req.z = p_axes[2]
+        self.req.x = float(p_axes[0][-1])
+        self.req.y = float(p_axes[1][-1])
+        self.req.z = float(p_axes[2][-1])
         
-        self.req.velX = v_axes[0]
-        self.req.velY= v_axes[1]
-        self.req.velZ = v_axes[2]  
+    
+    
+        self.req.vel_x = float(v_axes[0])
+        self.req.vel_y= float(v_axes[1])
+        self.req.vel_z = float(v_axes[2])
         
-        self.req.accX = a_axes[0]
-        self.req.accY= a_axes[1]
-        self.req.accZ = a_axes[2] 
+        self.req.acc_x = float(a_axes[0])
+        self.req.acc_y= float(a_axes[1])
+        self.req.acc_z= float(a_axes[2])
         
         return self.cli.call_async(self.req) 
 
@@ -52,8 +56,6 @@ def interpolation(tc, tf, ac, dT, pi, pf):
     pose = np.concatenate((p1,p2,p3))
     return time, pose  
 
-
-    
 def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     """ x, y, z actual position (mm)
     dx, dy, dz absolute deplacement (mm)"""
@@ -69,25 +71,33 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     tc = vc / ac
     
     # Define longest mouvement 
-    if dx > dy and dx > dz :
+    if abs(dx) > abs(dy) and abs(dx) > abs(dz) :
+        
+        vc = np.sign(dx) * vc
+        ac = np.sign(dx) * ac
+        
         pi_long = x
         pf_long = x + dx
         
         # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
-        
-        # Interpolation 
-        tx, px = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vx = vc
-        ax = ac
+        dl = pf_long - ( 2 * pc - pi_long)
+        print(dl)
+        if (np.sign(dx) * dl < 0):
+            tc = np.sqrt(dx / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            tx, px = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vx = vc
+            ax = ac
+        else:
+            tl = dl / vc
+            tf = tl + 2 * tc
+            tx, px = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vx = vc
+            ax = ac
+            
         # Calcule for the other axes 
         vy = dy / (tf - tc)
         ay = (vy / tc)
@@ -98,25 +108,36 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         tz, pz = interpolation(tc, tf, az,dT, z, z+dz)
         
         
-    elif dy > dx and dy > dz :
+    elif abs(dy) > abs(dx) and abs(dy) > abs(dz) :
+
+        vc = np.sign(dy) * vc
+        ac = np.sign(dy) * ac
+        
         pi_long = y
         pf_long = y + dy
         
         # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
-        
-        # Interpolation 
-        ty, py = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vy = vc
-        ay = ac
+        dl = pf_long - ( 2 * pc - pi_long)
+        if (np.sign(dy) * dl < 0):
+            # Gestion case of no constant movement 
+            tc = np.sqrt(dy / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            ty, py = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vy = vc
+            ay = ac
+        else:
+            #Calculate the time of movement at constant speed
+            tl = dl / vc
+            #Total movement time - acceleration time is equal to deceleration time.
+            tf = tl + 2 * tc
+            # Interpolation 
+            ty , py= interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vy = vc
+            ay = ac
+            
         # Calcule for the other axes 
         vx = dx / (tf - tc)
         ax = (vx / tc)
@@ -127,24 +148,36 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         tz, pz = interpolation(tc, tf, az,dT, z, z+dz)
         
     else :
-        pi_long = y
-        pf_long = y + dy
+        vc = np.sign(dz) * vc
+        ac = np.sign(dz) * ac
         
-                # calculate the lenght at the end of acceleration 
+        pi_long = z
+        pf_long = z + dz
+        
+        # calculate the lenght at the end of acceleration 
         pc = pi_long + 0.5 *ac * tc**2
         # calculate the length of the constant speed movement.
-        dl = pf_long - ( 2 * pc + pi_long)
-        if (dl < 0):
-            print('ca fait un poisson mon reuf')
-        #Calculate the time of movement at constant speed.
-        tl = dl/ vc
-        #Total movement time - acceleration time is equal to deceleration time.
-        tf = tl + 2 * tc
+        dl = pf_long - ( 2 * pc - pi_long)
         
-        # Interpolation 
-        tz, pz = interpolation(tc, tf, ac,dT,pi_long, pf_long)
-        vz = vc
-        az = ac
+        
+        if (np.sign(dz) * dl < 0):
+            # Gestion case of no constant movement 
+            tc = np.sqrt(dz / ac)
+            tf = 2 * tc
+            vc = ac * tc
+            tz, pz = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vz = vc
+            az = ac
+        else:
+            #Calculate the time of movement at constant speed
+            tl = dl / vc
+            #Total movement time - acceleration time is equal to deceleration time.
+            tf = tl + 2 * tc
+            # Interpolation 
+            tz, pz = interpolation(tc, tf, ac, dT, pi_long, pf_long)
+            vz = vc
+            az = ac
+            
         # Calcule for the other axes 
         vx = dx / (tf - tc)
         ax = (vx / tc)
@@ -153,7 +186,9 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
         vy = dy / (tf - tc)
         ay = (vy / tc)
         ty, py = interpolation(tc, tf, ay,dT, y, y+dy)
+    
 
+    
     t_axes = [tx,ty,tz]
     p_axes = [px,py,pz]
     v_axes = [vx,vy,vz]
@@ -162,7 +197,6 @@ def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
     
     return (t_axes, p_axes ,v_axes , a_axes, time)
 
-kinematicPlan(0,0,0,100,500,200,100,5000)   
 def main():
     rclpy.init()
 
@@ -172,7 +206,5 @@ def main():
 
     minimal_client.destroy_node()
     rclpy.shutdown()
-
-
 if __name__ == '__main__':
     main()

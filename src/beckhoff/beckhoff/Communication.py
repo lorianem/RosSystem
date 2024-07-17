@@ -43,21 +43,24 @@ class MinimalService(Node):
     def timer_callback(self):
         msg = Position()
         msg.x , msg.y , msg.r = getActualPos()
-        msg.x , msg.y , msg.r = getActualPos()
         self.publisher.publish(msg)
 
         
     def move_callback(self, rq, rs):
-        global moving, handles, attr
-        rs.err = "0"
-        #self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f", with a velocity of "%f"' % (rq.x,rq.y,rq.r, rq.velocity))         
-        #plc.write_by_name('MAIN.PCdata', [time.time(), rq.velocity, rq.x, rq.y,rq.r], pyads.PLCTYPE_LREAL * 5)
-        #plc.write_by_name('External_Setpoint.send_value', True, pyads.PLCTYPE_BOOL)
         
+        self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f" \n with a velocity of x: "%f", y : "%f",r : "%f" \n and an acceleration of x : "%f", y : "%f",r : "%f"'
+                                % (rq.x,rq.y,rq.z, 
+                                rq.vel_x,rq.vel_y,rq.vel_z,
+                                rq.acc_x,rq.acc_y,rq.acc_z))         
+        plc.write_by_name('MAIN.PCdata', [time.time(), rq.x,rq.vel_x, rq.acc_x, -rq.y,rq.vel_y,rq.acc_y, 0.0, 100.0], pyads.PLCTYPE_LREAL * 9)
+        #plc.write_by_name('External_Setpoint.send_value', True, pyads.PLCTYPE_BOOL)
+        x, y , r  = getActualPos()
+        self.get_logger().info('x :"%f", y: "%f", r : "%f"'%  (x ,  y, r) ) 
         #moving = True
         #while moving :
         #    pass    
         rs.feedback  = 'ok'
+        
         #plc.del_device_notification(handles)
         return rs
 
