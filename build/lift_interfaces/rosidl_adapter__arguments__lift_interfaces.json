@@ -1,0 +1,7 @@
+{
+  "package_name": "lift_interfaces",
+  "non_idl_tuples": [
+    "/home/student/ros_ws/RosSystem/src/lift_interfaces:action/MoveLift.action",
+    "/home/student/ros_ws/RosSystem/src/lift_interfaces:srv/PositionLift.srv"
+  ]
+}

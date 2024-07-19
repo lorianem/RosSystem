@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp.o.d"
   "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.o"
   "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.o.d"
+  "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o"
+  "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o.d"
   "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp.o"
   "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp.o.d"
   "libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
@@ -15,7 +17,9 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/cartesian_move__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp"
   "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/head_rotation__rosidl_typesupport_fastrtps_cpp.hpp"
   "rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/target_pose__rosidl_typesupport_fastrtps_cpp.hpp"
 )
 

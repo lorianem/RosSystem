@@ -1,0 +1,322 @@
+[0.106s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.106s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7084c5d27af0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7084c5ed51e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7084c5ed51e0>>, mixin_verb=('build',))
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/ros_ws/RosSystem'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/beckhoff' with type 'ros.ament_python' and name 'beckhoff'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/beckhoff_interfaces) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'src/beckhoff_interfaces' with type 'ros.ament_cmake' and name 'beckhoff_interfaces'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/lift_interfaces) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lift_interfaces' with type 'ros.ament_cmake' and name 'lift_interfaces'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/platform_lift) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/platform_lift' with type 'ros.ament_python' and name 'platform_lift'
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.298s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/student/ros_ws/RosSystem/install
+[0.300s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 55 installed packages in /home/student/ws_moveit2/install
+[0.302s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 379 installed packages in /opt/ros/humble
+[0.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_target' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_clean_cache' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_clean_first' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'cmake_force_configure' from command line to 'False'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'ament_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'catkin_cmake_args' from command line to 'None'
+[0.348s] Level 5:colcon.colcon_core.verb:set package 'beckhoff' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.349s] DEBUG:colcon.colcon_core.verb:Building package 'beckhoff' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros_ws/RosSystem/build/beckhoff', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros_ws/RosSystem/install/beckhoff', 'merge_install': False, 'path': '/home/student/ros_ws/RosSystem/src/beckhoff', 'symlink_install': False, 'test_result_base': None}
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'beckhoff_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.349s] DEBUG:colcon.colcon_core.verb:Building package 'beckhoff_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces', 'merge_install': False, 'path': '/home/student/ros_ws/RosSystem/src/beckhoff_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'lift_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.349s] DEBUG:colcon.colcon_core.verb:Building package 'lift_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros_ws/RosSystem/build/lift_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros_ws/RosSystem/install/lift_interfaces', 'merge_install': False, 'path': '/home/student/ros_ws/RosSystem/src/lift_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_target' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_clean_cache' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_clean_first' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'cmake_force_configure' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'ament_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'catkin_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'platform_lift' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.350s] DEBUG:colcon.colcon_core.verb:Building package 'platform_lift' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros_ws/RosSystem/build/platform_lift', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros_ws/RosSystem/install/platform_lift', 'merge_install': False, 'path': '/home/student/ros_ws/RosSystem/src/platform_lift', 'symlink_install': False, 'test_result_base': None}
+[0.350s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.351s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.351s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/ros_ws/RosSystem/src/beckhoff' with build type 'ament_python'
+[0.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff', 'ament_prefix_path')
+[0.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/ament_prefix_path.ps1'
+[0.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/ament_prefix_path.dsv'
+[0.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/ament_prefix_path.sh'
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.361s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/ros_ws/RosSystem/src/beckhoff_interfaces' with build type 'ament_cmake'
+[0.361s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/ros_ws/RosSystem/src/beckhoff_interfaces'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.369s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/student/ros_ws/RosSystem/src/lift_interfaces' with build type 'ament_cmake'
+[0.370s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/student/ros_ws/RosSystem/src/lift_interfaces'
+[0.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.378s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/ros_ws/RosSystem/src/platform_lift' with build type 'ament_python'
+[0.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_lift', 'ament_prefix_path')
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/ament_prefix_path.ps1'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/ament_prefix_path.dsv'
+[0.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/ament_prefix_path.sh'
+[0.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.627s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/ros_ws/RosSystem/src/beckhoff'
+[0.628s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.628s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/build/lift_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/lift_interfaces -- -j16 -l16
+[1.004s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/ros_ws/RosSystem/src/platform_lift'
+[1.004s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.004s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/beckhoff_interfaces -- -j16 -l16
+[1.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/build/lift_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --build /home/student/ros_ws/RosSystem/build/lift_interfaces -- -j16 -l16
+[1.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/src/beckhoff': PYTHONPATH=/home/student/ros_ws/RosSystem/build/beckhoff/prefix_override:/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/beckhoff build --build-base /home/student/ros_ws/RosSystem/build/beckhoff/build install --record /home/student/ros_ws/RosSystem/build/beckhoff/install.log --single-version-externally-managed install_data
+[1.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/src/platform_lift': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data
+[1.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/build/lift_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/lift_interfaces
+[1.551s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lift_interfaces)
+[1.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/build/lift_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/lift_interfaces
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces' for CMake module files
+[1.554s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces' for CMake config files
+[1.555s] Level 1:colcon.colcon_core.shell:create_environment_hook('lift_interfaces', 'cmake_prefix_path')
+[1.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.ps1'
+[1.555s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.dsv'
+[1.556s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.sh'
+[1.556s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib'
+[1.556s] Level 1:colcon.colcon_core.shell:create_environment_hook('lift_interfaces', 'ld_library_path_lib')
+[1.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.ps1'
+[1.557s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.dsv'
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.sh'
+[1.558s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/bin'
+[1.558s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib/pkgconfig/lift_interfaces.pc'
+[1.558s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib/python3.10/site-packages'
+[1.558s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/bin'
+[1.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.dsv'
+[1.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.sh'
+[1.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.bash'
+[1.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.zsh'
+[1.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/lift_interfaces/share/colcon-core/packages/lift_interfaces)
+[1.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/beckhoff_interfaces
+[1.739s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(beckhoff_interfaces)
+[1.740s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces' for CMake module files
+[1.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/build/beckhoff_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/ros_ws/RosSystem/install/platform_lift:/home/student/ws_moveit2/install/moveit_configs_utils:/home/student/ws_moveit2/install/launch_param_builder:/home/student/ros_ws/RosSystem/install/beckhoff:/opt/ros/humble /usr/bin/cmake --install /home/student/ros_ws/RosSystem/build/beckhoff_interfaces
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces' for CMake config files
+[1.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff_interfaces', 'cmake_prefix_path')
+[1.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.ps1'
+[1.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.dsv'
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.sh'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib'
+[1.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff_interfaces', 'ld_library_path_lib')
+[1.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.dsv'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.sh'
+[1.745s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/bin'
+[1.745s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib/pkgconfig/beckhoff_interfaces.pc'
+[1.745s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib/python3.10/site-packages'
+[1.746s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/bin'
+[1.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.ps1'
+[1.746s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.dsv'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.sh'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.bash'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.zsh'
+[1.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/colcon-core/packages/beckhoff_interfaces)
+[1.749s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff' for CMake module files
+[1.750s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/src/beckhoff' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/beckhoff/prefix_override:/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/beckhoff build --build-base /home/student/ros_ws/RosSystem/build/beckhoff/build install --record /home/student/ros_ws/RosSystem/build/beckhoff/install.log --single-version-externally-managed install_data
+[1.750s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff' for CMake config files
+[1.750s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff/lib'
+[1.750s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff/bin'
+[1.750s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff/lib/pkgconfig/beckhoff.pc'
+[1.751s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages'
+[1.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff', 'pythonpath')
+[1.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/pythonpath.ps1'
+[1.751s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/pythonpath.dsv'
+[1.752s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/hook/pythonpath.sh'
+[1.752s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff/bin'
+[1.752s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(beckhoff)
+[1.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/package.ps1'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/package.dsv'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/package.sh'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/package.bash'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff/share/beckhoff/package.zsh'
+[1.754s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/beckhoff/share/colcon-core/packages/beckhoff)
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift' for CMake module files
+[1.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/RosSystem/src/platform_lift' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data
+[1.760s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift' for CMake config files
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift/lib'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift/bin'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift/lib/pkgconfig/platform_lift.pc'
+[1.761s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages'
+[1.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('platform_lift', 'pythonpath')
+[1.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/pythonpath.ps1'
+[1.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/pythonpath.dsv'
+[1.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/hook/pythonpath.sh'
+[1.764s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/platform_lift/bin'
+[1.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(platform_lift)
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/package.ps1'
+[1.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/package.dsv'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/package.sh'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/package.bash'
+[1.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/platform_lift/share/platform_lift/package.zsh'
+[1.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/platform_lift/share/colcon-core/packages/platform_lift)
+[1.820s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lift_interfaces)
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces' for CMake module files
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces' for CMake config files
+[1.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('lift_interfaces', 'cmake_prefix_path')
+[1.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.ps1'
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.dsv'
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/cmake_prefix_path.sh'
+[1.823s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib'
+[1.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('lift_interfaces', 'ld_library_path_lib')
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.ps1'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.dsv'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/hook/ld_library_path_lib.sh'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/bin'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib/pkgconfig/lift_interfaces.pc'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/lib/python3.10/site-packages'
+[1.824s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/lift_interfaces/bin'
+[1.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.ps1'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.dsv'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.sh'
+[1.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.bash'
+[1.826s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/lift_interfaces/share/lift_interfaces/package.zsh'
+[1.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/lift_interfaces/share/colcon-core/packages/lift_interfaces)
+[2.204s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(beckhoff_interfaces)
+[2.204s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces' for CMake module files
+[2.205s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces' for CMake config files
+[2.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff_interfaces', 'cmake_prefix_path')
+[2.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.ps1'
+[2.207s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.dsv'
+[2.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/cmake_prefix_path.sh'
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib'
+[2.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('beckhoff_interfaces', 'ld_library_path_lib')
+[2.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.ps1'
+[2.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.dsv'
+[2.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/hook/ld_library_path_lib.sh'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/bin'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib/pkgconfig/beckhoff_interfaces.pc'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/lib/python3.10/site-packages'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/bin'
+[2.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.ps1'
+[2.209s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.dsv'
+[2.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.sh'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.bash'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/beckhoff_interfaces/package.zsh'
+[2.210s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/share/colcon-core/packages/beckhoff_interfaces)
+[2.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.210s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.210s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.217s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.217s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.226s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.227s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/RosSystem/install/local_setup.ps1'
+[2.228s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros_ws/RosSystem/install/_local_setup_util_ps1.py'
+[2.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/RosSystem/install/setup.ps1'
+[2.233s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/RosSystem/install/local_setup.sh'
+[2.233s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros_ws/RosSystem/install/_local_setup_util_sh.py'
+[2.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/RosSystem/install/setup.sh'
+[2.237s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/RosSystem/install/local_setup.bash'
+[2.237s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/RosSystem/install/setup.bash'
+[2.240s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/RosSystem/install/local_setup.zsh'
+[2.241s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/RosSystem/install/setup.zsh'

@@ -6,6 +6,7 @@
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:msg/Position.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/TargetPose.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/CartesianMove.idl",
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/HeadRotation.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:action/Move.idl"
   ],
   "ros_interface_dependencies": [
@@ -27,6 +28,7 @@
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/msg/Position.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/TargetPose.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/CartesianMove.idl",
+    "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/srv/HeadRotation.idl",
     "/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces/action/Move.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",

@@ -12,9 +12,13 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__builder.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__struct.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__traits.hpp"
+  "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__builder.hpp"
+  "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__struct.hpp"
+  "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__traits.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__builder.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__struct.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__traits.hpp"
+  "rosidl_generator_cpp/beckhoff_interfaces/srv/head_rotation.hpp"
   "rosidl_generator_cpp/beckhoff_interfaces/srv/target_pose.hpp"
 )
 

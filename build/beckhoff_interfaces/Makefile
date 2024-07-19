@@ -477,6 +477,30 @@ rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.c.s
 .PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.c.s
 
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.o: rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.o
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.o
+
+# target to build an object file
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.o
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.o
+
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.i: rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.i
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.i
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.i
+
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.s: rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.s
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_c.dir/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.s
+.PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.c.s
+
 rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.o: rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.c.o
 .PHONY : rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.o
 
@@ -645,6 +669,30 @@ rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.s
 .PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.s
 
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.o: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.o
+
+# target to build an object file
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o
+
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.i: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i
+
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.s: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s
+.PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s
+
 rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.o: rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.c.o
 .PHONY : rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.o
 
@@ -740,6 +788,30 @@ rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.s: ros
 rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.s
+
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.o: rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.i: rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.s: rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
 
 rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.o: rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.o
@@ -837,6 +909,30 @@ rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.cpp.s
 
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.o: rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.o
+
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.i: rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.i
+
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.s: rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.cpp.s
+
 rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.o: rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.o
 
@@ -932,6 +1028,30 @@ rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__typ
 rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.o: rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.i: rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.s: rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.o: rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.o
@@ -1029,6 +1149,30 @@ rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cart
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.o: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.i: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.s: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.o: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.o
 
@@ -1124,6 +1268,30 @@ rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move
 rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.c.s
+
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.o: rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.o
+
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.i: rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.i
+
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.s: rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.c.s
 
 rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.o: rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.o
@@ -1221,6 +1389,30 @@ rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_mo
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_move__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_move__type_support.cpp.s
 
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.o: rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.i: rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.s: rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.cpp.s
+
 rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.o: rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.o
 
@@ -1285,6 +1477,9 @@ help:
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.o"
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.i"
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.s"
+	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.o"
+	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.i"
+	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.s"
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.o"
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.i"
 	@echo "... rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.s"
@@ -1306,6 +1501,9 @@ help:
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.o"
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.i"
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.s"
+	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.o"
+	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.i"
+	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.s"
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.o"
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.i"
 	@echo "... rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.s"
@@ -1318,6 +1516,9 @@ help:
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.o"
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.i"
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/cartesian_move__type_support.s"
+	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.o"
+	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.i"
+	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/head_rotation__type_support.s"
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.o"
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.i"
 	@echo "... rosidl_typesupport_c/beckhoff_interfaces/srv/target_pose__type_support.s"
@@ -1330,6 +1531,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.o"
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.i"
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/cartesian_move__type_support.s"
+	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.o"
+	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.i"
+	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/head_rotation__type_support.s"
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.o"
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.i"
 	@echo "... rosidl_typesupport_cpp/beckhoff_interfaces/srv/target_pose__type_support.s"
@@ -1342,6 +1546,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/head_rotation__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/beckhoff_interfaces/srv/detail/target_pose__type_support_c.s"
@@ -1354,6 +1561,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.s"
@@ -1366,6 +1576,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/beckhoff_interfaces/srv/detail/target_pose__type_support.s"
@@ -1378,6 +1591,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_move__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_move__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/cartesian_move__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/head_rotation__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/beckhoff_interfaces/srv/detail/target_pose__type_support.s"

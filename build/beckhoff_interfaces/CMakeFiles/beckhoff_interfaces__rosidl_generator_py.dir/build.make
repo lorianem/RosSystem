@@ -111,10 +111,24 @@ CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beck
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c -o CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.s
 
+CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c
+CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o -MF CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o.d -o CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o -c /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c
+
+CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c > CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.i
+
+CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c -o CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.s
+
 CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o: rosidl_generator_py/beckhoff_interfaces/action/_move_s.c
 CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o -MF CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o.d -o CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o -c /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c
 
 CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.i: cmake_force
@@ -130,6 +144,7 @@ beckhoff_interfaces__rosidl_generator_py_OBJECTS = \
 "CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/msg/_position_s.c.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.c.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.o" \
+"CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o"
 
 # External object files for target beckhoff_interfaces__rosidl_generator_py
@@ -138,6 +153,7 @@ beckhoff_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/msg/_position_s.c.o
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.c.o
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c.o
+rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c.o
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/rosidl_generator_py/beckhoff_interfaces/action/_move_s.c.o
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/build.make
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
@@ -156,7 +172,7 @@ rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so: CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library rosidl_generator_py/beckhoff_interfaces/libbeckhoff_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/beckhoff_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

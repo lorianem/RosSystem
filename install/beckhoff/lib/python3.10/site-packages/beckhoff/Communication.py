@@ -1,4 +1,4 @@
-from beckhoff_interfaces.srv import CartesianMove
+from beckhoff_interfaces.srv import CartesianMove, HeadRotation
 from beckhoff_interfaces.msg import Position
 import pyads
 import rclpy
@@ -34,7 +34,11 @@ class MinimalService(Node):
 
     def __init__(self):
         super().__init__('minimal_service')
+        # Creation Service for Simple Movement
         self.srv = self.create_service(CartesianMove, 'cartesianMove', self.move_callback)
+        # Creation Service for rotation Movement
+        self.srv = self.create_service(HeadRotation, 'rotationMove', self.rotation_callback)
+        # Creation Publisher of the position
         self.publisher = self.create_publisher(Position, 'rt_position',10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
@@ -48,11 +52,11 @@ class MinimalService(Node):
         
     def move_callback(self, rq, rs):
         
-        self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f" \n with a velocity of x: "%f", y : "%f",r : "%f" \n and an acceleration of x : "%f", y : "%f",r : "%f"'
+        self.get_logger().info('I move to : x : "%f", y : "%f",r : "%f" \n with a velocity of x: "%f", y : "%f",r : "%f" \n and an acceleration of x : "%f", y : "%f",r : "%f"\n\n'
                                 % (rq.x,rq.y,rq.z, 
-                                rq.vel_x,rq.vel_y,rq.vel_z,
+                                abs(rq.vel_x),rq.vel_y,rq.vel_z,
                                 rq.acc_x,rq.acc_y,rq.acc_z))         
-        plc.write_by_name('MAIN.PCdata', [time.time(), rq.x,rq.vel_x, rq.acc_x, -rq.y,rq.vel_y,rq.acc_y, 0.0, 100.0], pyads.PLCTYPE_LREAL * 9)
+        plc.write_by_name('MAIN.PCdata', [time.time(), rq.x,abs(rq.vel_x), abs(rq.acc_x), rq.y,abs(rq.vel_y),abs(rq.acc_y), self.r, 0], pyads.PLCTYPE_LREAL * 9)
         #plc.write_by_name('External_Setpoint.send_value', True, pyads.PLCTYPE_BOOL)
         x, y , r  = getActualPos()
         self.get_logger().info('x :"%f", y: "%f", r : "%f"'%  (x ,  y, r) ) 
@@ -63,6 +67,12 @@ class MinimalService(Node):
         
         #plc.del_device_notification(handles)
         return rs
+    
+    def rotation_callback(self, rotRq, rotRs):
+        getActualPos()
+        plc.write_by_name('MAIN.PCdata', self.x, 0, self.y, 0, rotRq.deg, rotRq.deg)
+        rotRs.feedback = "ok"
+        return rotRs
 
 
 def main():

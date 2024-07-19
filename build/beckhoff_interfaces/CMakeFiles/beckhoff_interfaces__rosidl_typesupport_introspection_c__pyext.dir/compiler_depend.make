@@ -254,6 +254,9 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
   rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.h \
   rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__struct.h \
   rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.h \
+  rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.h \
+  rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__struct.h \
+  rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.h \
   rosidl_generator_c/beckhoff_interfaces/action/detail/move__type_support.h \
   rosidl_generator_c/beckhoff_interfaces/action/detail/move__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -262,6 +265,10 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
 
 
 rosidl_generator_c/beckhoff_interfaces/action/detail/move__functions.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+rosidl_generator_c/beckhoff_interfaces/action/detail/move__struct.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -471,6 +478,14 @@ rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesup
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
+
+/usr/include/python3.10/funcobject.h:
+
+/usr/include/python3.10/objimpl.h:
+
+/usr/include/python3.10/patchlevel.h:
+
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/python3.10/namespaceobject.h:
@@ -492,6 +507,8 @@ rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesup
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.h:
+
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -560,6 +577,8 @@ rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__functions.h:
 /usr/include/errno.h:
 
 /usr/include/python3.10/cpython/fileutils.h:
+
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -685,8 +704,6 @@ rosidl_generator_c/beckhoff_interfaces/srv/detail/target_pose__functions.h:
 
 /usr/include/python3.10/descrobject.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
 /usr/include/python3.10/genericaliasobject.h:
 
 /usr/include/stdint.h:
@@ -761,18 +778,10 @@ rosidl_generator_c/beckhoff_interfaces/msg/detail/position__struct.h:
 
 rosidl_generator_c/beckhoff_interfaces/srv/detail/cartesian_move__type_support.h:
 
+rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.h:
+
 /usr/include/features-time64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 rosidl_generator_c/beckhoff_interfaces/action/detail/move__type_support.h:
-
-rosidl_generator_c/beckhoff_interfaces/action/detail/move__struct.h:
-
-/usr/include/python3.10/funcobject.h:
-
-/usr/include/python3.10/objimpl.h:
-
-/usr/include/python3.10/patchlevel.h:
-
-/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:

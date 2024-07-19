@@ -1,36 +1,56 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
+# Created By : loriane BM
+# Date : 17 July 2024
+# Version : '1.0'
+# -----------------------------------------------
+# Imports
+# -----------------------------------------------
+
 import sys
 import numpy as np 
 from beckhoff_interfaces.srv import CartesianMove, TargetPose
 import rclpy
 from rclpy.node import Node
+from beckhoff_interfaces.msg import Position
 #from cinematicRobot import kinematicPlan
 
 class MinimalClientAsync(Node):
 
     def __init__(self):
         super().__init__('minimal_client_async')
+        self.x, self.y, self.r = 0,0,0
+        
+        # Creation client ROS 
         self.cli = self.create_client(CartesianMove, 'cartesianMove')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
         self.req = CartesianMove.Request()
+        
+        # Creation service ROS
         self.srv = self.create_service(TargetPose, 'target_pose', self.target_pose_callback)
+        
+        # Création Subscriber to get the actual position 
+        self.subscription = self.create_subscription(
+            Position,
+            'rt_position',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
 
     def target_pose_callback(self, rq, rs):
         accRef = 5000
         self.get_logger().info('info : dx : "%f", dy : "%f",dz : "%f"' % (rq.dx,rq.dy,rq.dz))
         future = self.send_request(rq.dx,rq.dy,rq.dz,rq.vel,accRef)
         rs.feedback = 'ok'
-        return rs
-
+        return rs        
     
     def send_request(self,dx, dy,dz, vel, acc):
-        x, y, z = 50.0,300.0,0.0
-        t_axes, p_axes, v_axes, a_axes, time = kinematicPlan (x,y,z, dx,dy,dz, vel, acc)
+        z = 0
+        t_axes, p_axes, v_axes, a_axes, time = kinematicPlan (self.x,self.y,z, dx,dy,dz, vel, acc)
         self.req.x = float(p_axes[0][-1])
         self.req.y = float(p_axes[1][-1])
         self.req.z = float(p_axes[2][-1])
-        
-    
     
         self.req.vel_x = float(v_axes[0])
         self.req.vel_y= float(v_axes[1])
@@ -41,12 +61,27 @@ class MinimalClientAsync(Node):
         self.req.acc_z= float(a_axes[2])
         
         return self.cli.call_async(self.req) 
+    
+    def listener_callback(self, msg):
+        self.x, self.y, self.z = msg.x,msg.y,msg.r
+        self.get_logger().info('Actual pos : x : "%f", y : "%f",r : "%f"' % (msg.x,msg.y,msg.r))
 
 def interpolation(tc, tf, ac, dT, pi, pf):
+    """
+    Args:
+        tf (_float/int_): final time of the movement
+        ac (_float/int_): acceleration of the axis 
+        dT (_float/int_): dt
+        pi (_float/int_): initial position
+        pf (_float/int_): final position 
 
+    Returns:
+        time (np.array): array of each sample time ,
+        pose (_float/int_): array of each position 
+    """
     t1 = np.arange(0, tc, dT)  # Acceleration phase
     t2 = np.arange(tc, tf - tc, dT)  # Constant speed phase
-    t3 = np.arange(tf - tc, tf, dT) 
+    t3 = np.arange(tf - tc, tf, dT)  # Decceleration phase
     
     p1 = pi + 0.5 * ac * t1 ** 2
     p2 = pi + ac * tc * (t2 - (tc/2))
@@ -57,8 +92,25 @@ def interpolation(tc, tf, ac, dT, pi, pf):
     return time, pose  
 
 def kinematicPlan(x,y, z,dx,dy,dz, vcref, acref):
-    """ x, y, z actual position (mm)
-    dx, dy, dz absolute deplacement (mm)"""
+    """Planning movement 
+
+    Args:
+        x (float/int): actual x position (mm)
+        y (float/int): actual y position (mm)
+        z (float/int): actual z position (mm)
+        dx (float/int): relative x deplacement (mm)
+        dy (float/int): relative y deplacement (mm)
+        dz (float/int): relative z deplacement (mm)
+        vcref (float/int): reference velocity (mm/s)
+        acref (float/int): referencre acceleration (mm/s**2)
+
+    Returns:
+        t_axes (array): array of each sample time [0][labelOfSampleTime]
+        p_axes (array): array of all position each sample times for each axes [axes][labelOfPosition] 
+        v_axes (array): array of all velocity max for each axes  [axes]
+        a_axes (array): array of all acceleleration for each axes [axes]
+        time (array): 
+    """
 
 
     # Sample time 

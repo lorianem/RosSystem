@@ -1,4 +1,5 @@
 /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:msg/Position.idl
 /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/TargetPose.idl
 /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/CartesianMove.idl
+/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:srv/HeadRotation.idl
 /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_adapter/beckhoff_interfaces:action/Move.idl

@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Position.msg" 
   "srv/TargetPose.srv"
   "srv/CartesianMove.srv"
+  "srv/HeadRotation.srv"
   "action/Move.action"
 )
 

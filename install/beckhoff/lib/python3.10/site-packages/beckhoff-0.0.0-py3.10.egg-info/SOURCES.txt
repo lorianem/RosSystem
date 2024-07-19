@@ -15,6 +15,7 @@ beckhoff/cinematicCommand.py
 beckhoff/cinematicRobot.py
 beckhoff/command.py
 beckhoff/listenerPos.py
+launch/launch.py
 resource/beckhoff
 test/test_copyright.py
 test/test_flake8.py
