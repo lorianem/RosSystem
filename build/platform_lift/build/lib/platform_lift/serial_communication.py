@@ -82,8 +82,8 @@ def get_param(cmd, option, data=0):
 
 # Send the request to the SCU
 def send_serial(ser, cmd, data):
-    # Initialize the command as bytes
-    send = cmd.encode('utf-8')
+
+    send = cmd.encode('ascii')
     
     # Append the data as bytes
     for i in data:
@@ -97,15 +97,17 @@ def send_serial(ser, cmd, data):
     
     # Send the bytes over the serial connection
     print(f'Sending data: {send.hex()}')
+    print("send" , send)
     ser.write(send)
 
 # Receive codes from reply and check if there is an error
 def rcv_codes(ser, cmd):
     # Receive command
     cmd_rcv = ser.read(2)
-    
+    print(cmd_rcv, cmd.encode('utf-8'))
     # Assert received the same command
     if(cmd_rcv != cmd.encode('utf-8')):
+        print(ser.read(1))
         return False, "Did not receive same command"
     
     # Receive reply parameter

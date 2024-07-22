@@ -24,7 +24,7 @@ def main(args=None):
 
     action_client = CommandActionClient()
 
-    future = action_client.send_goal(1000)
+    future = action_client.send_goal(500)
 
     rclpy.spin_until_future_complete(action_client, future)
 

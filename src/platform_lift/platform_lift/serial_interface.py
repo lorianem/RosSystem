@@ -179,7 +179,7 @@ def send_cyclic(ser):
 
 def init_serial():
     #create serial communication
-    ser = serial.Serial(port='/dev/ttyUSB0',baudrate=38400,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS)
+    ser = serial.Serial(port='/dev/ttyUSB1',baudrate=38400,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS)
     print("Connected to serial: " + str(ser.is_open) )
     #enable to use ctrl-C to leave program and close communication
     def handler(signum, frame):

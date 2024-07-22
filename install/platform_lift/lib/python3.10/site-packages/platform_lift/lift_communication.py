@@ -35,7 +35,6 @@ class MoveLiftServer(Node):
     def execute(self, goal_handle):
         self.get_logger().info('Executing goal...')
         
-
         global ser
         reset_move(ser)
         rate = self.create_rate(4)
@@ -91,7 +90,7 @@ def main(args=None):
     move_lift_server = MoveLiftServer()
     rclpy.spin(move_lift_server)
     
-    service = move_lift_server.create_service(PositionLift, 'posLift', sent_position)
+    #service = move_lift_server.create_service(PositionLift, 'posLift', sent_position)
 
     #executor = rclpy.executors.MultiThreadedExecutor()
     

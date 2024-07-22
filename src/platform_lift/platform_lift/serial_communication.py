@@ -14,6 +14,7 @@ import threading
 global sem
 
 # Get appropriate parameters for request based on command
+#No modification
 def get_param(cmd, option, data=0): 
     if(cmd == "RO"):  # open remote mode
         param = [0] 
@@ -82,8 +83,9 @@ def get_param(cmd, option, data=0):
 
 # Send the request to the SCU
 def send_serial(ser, cmd, data):
-    # Initialize the command as bytes
-    send = cmd.encode('utf-8')
+
+    ## add 
+    send = cmd.encode('ascii')
     
     # Append the data as bytes
     for i in data:
@@ -97,15 +99,18 @@ def send_serial(ser, cmd, data):
     
     # Send the bytes over the serial connection
     print(f'Sending data: {send.hex()}')
+
     ser.write(send)
 
 # Receive codes from reply and check if there is an error
+#No modification
 def rcv_codes(ser, cmd):
     # Receive command
     cmd_rcv = ser.read(2)
-    
+    print(cmd_rcv, cmd.encode('utf-8'))
     # Assert received the same command
     if(cmd_rcv != cmd.encode('utf-8')):
+        print(ser.read(1))
         return False, "Did not receive same command"
     
     # Receive reply parameter
@@ -127,7 +132,9 @@ def rcv_codes(ser, cmd):
     return False, "Did not receive correct communication error or acknowledge codes"
 
 # Receive requested data if RG command
+#No modification
 def rcv_data(ser, option):
+    
     if(option == "position"):
         data_rcv = ser.read(2)
         if(data_rcv.hex() != '0400'):  # assert we will receive 4 bytes
@@ -135,6 +142,8 @@ def rcv_data(ser, option):
             return False
         data_rcv = ser.read(4)
         data = int(data_rcv[::-1].hex(), 16) * 0.3
+        
+        
     elif(option == "status"):
         data_rcv = ser.read(2)
         if(data_rcv.hex() != '0100'):  # assert we will receive 1 byte
@@ -142,6 +151,7 @@ def rcv_data(ser, option):
             return False
         data_rcv = ser.read()
         data = int(data_rcv.hex(), 16)
+        
     elif(option == "speed"):
         data_rcv = ser.read(2)
         if(data_rcv.hex() != '0200'):  # assert we will receive 4 bytes
@@ -149,12 +159,14 @@ def rcv_data(ser, option):
             return False
         data_rcv = ser.read(2)
         data = int(data_rcv[::-1].hex(), 16)
+        
     else:
         return False, "Wrong option"
     
     return True, data
 
 # One exchange (request + reply) with serial   
+# Modification : add "try"
 def exch_serial(ser, cmd, option='', arg=0):
     global sem
     
@@ -192,6 +204,7 @@ def exch_serial(ser, cmd, option='', arg=0):
     
     return success, data
 
+# No modification
 def init_serial_communication(ser):
     global sem
     sem = threading.Semaphore()
@@ -202,8 +215,8 @@ def init_serial_communication(ser):
         print("Failed to open remote mode")
         exit(1)
         
-    success, _ = exch_serial(ser, "RC")
-    if success:
+    
+    if exch_serial(ser, "RC"):
         print("Remote cyclic activated")
     else:
         print("Failed to activate remote cyclic")
