@@ -1,0 +1,27 @@
+[1.034s] Invoking command in '/home/student/ros_ws/RosSystem/src/platform_lift': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data
+[1.278s] running egg_info
+[1.279s] writing ../../build/platform_lift/platform_lift.egg-info/PKG-INFO
+[1.279s] writing dependency_links to ../../build/platform_lift/platform_lift.egg-info/dependency_links.txt
+[1.280s] writing entry points to ../../build/platform_lift/platform_lift.egg-info/entry_points.txt
+[1.280s] writing requirements to ../../build/platform_lift/platform_lift.egg-info/requires.txt
+[1.280s] writing top-level names to ../../build/platform_lift/platform_lift.egg-info/top_level.txt
+[1.285s] reading manifest file '../../build/platform_lift/platform_lift.egg-info/SOURCES.txt'
+[1.285s] adding license file 'LICENSE'
+[1.288s] writing manifest file '../../build/platform_lift/platform_lift.egg-info/SOURCES.txt'
+[1.289s] running build
+[1.289s] running build_py
+[1.289s] copying platform_lift/command.py -> /home/student/ros_ws/RosSystem/build/platform_lift/build/lib/platform_lift
+[1.289s] running install
+[1.291s] running install_lib
+[1.294s] copying /home/student/ros_ws/RosSystem/build/platform_lift/build/lib/platform_lift/command.py -> /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift
+[1.296s] byte-compiling /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/command.py to command.cpython-310.pyc
+[1.297s] running install_data
+[1.297s] running install_egg_info
+[1.298s] removing '/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift-0.0.0-py3.10.egg-info' (and everything under it)
+[1.298s] Copying ../../build/platform_lift/platform_lift.egg-info to /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift-0.0.0-py3.10.egg-info
+[1.298s] running install_scripts
+[1.319s] Installing command script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+[1.319s] Installing lift_communication script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+[1.319s] Installing srv_client script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+[1.319s] writing list of installed files to '/home/student/ros_ws/RosSystem/build/platform_lift/install.log'
+[1.367s] Invoked command in '/home/student/ros_ws/RosSystem/src/platform_lift' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data

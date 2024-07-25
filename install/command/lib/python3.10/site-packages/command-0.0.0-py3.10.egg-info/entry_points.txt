@@ -1,0 +1,6 @@
+[console_scripts]
+commandAxis = command.commandAxis:main
+commandGripper = command.commandGripper:main
+commandHead = command.commandHeadRotation:main
+commandLift = command.commandLiftCollumn:main
+

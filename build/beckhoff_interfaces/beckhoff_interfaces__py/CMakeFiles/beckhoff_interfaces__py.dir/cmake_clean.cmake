@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/beckhoff_interfaces/srv/__init__.py"
   "../rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move.py"
   "../rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_gripper.py"
+  "../rosidl_generator_py/beckhoff_interfaces/srv/_gripper_s.c"
   "../rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation.py"
   "../rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c"
   "../rosidl_generator_py/beckhoff_interfaces/srv/_target_pose.py"

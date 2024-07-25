@@ -10,5 +10,6 @@ beckhoff_interfaces/msg/__init__.py
 beckhoff_interfaces/msg/_position.py
 beckhoff_interfaces/srv/__init__.py
 beckhoff_interfaces/srv/_cartesian_move.py
+beckhoff_interfaces/srv/_gripper.py
 beckhoff_interfaces/srv/_head_rotation.py
 beckhoff_interfaces/srv/_target_pose.py

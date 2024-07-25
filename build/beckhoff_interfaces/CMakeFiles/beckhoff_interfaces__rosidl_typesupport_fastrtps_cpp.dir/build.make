@@ -81,6 +81,7 @@ rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/posi
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: rosidl_adapter/beckhoff_interfaces/srv/TargetPose.idl
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: rosidl_adapter/beckhoff_interfaces/srv/CartesianMove.idl
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: rosidl_adapter/beckhoff_interfaces/srv/HeadRotation.idl
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: rosidl_adapter/beckhoff_interfaces/srv/Gripper.idl
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: rosidl_adapter/beckhoff_interfaces/action/Move.idl
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -112,6 +113,12 @@ rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head
 
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/head_rotation__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/head_rotation__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp
 
 rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/dds_fastrtps/position__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp
@@ -175,10 +182,24 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.s
 
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o -MF CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o.d -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o -c /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp
+
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp > CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.i
+
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.s
+
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o -MF CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o.d -o CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o -c /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp
 
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.i: cmake_force
@@ -195,6 +216,7 @@ beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o" \
+"CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o" \
 "CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o"
 
 # External object files for target beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp
@@ -204,6 +226,7 @@ libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp.o
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp.o
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp.o
+libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp.o
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/action/detail/dds_fastrtps/move__type_support.cpp.o
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -215,7 +238,7 @@ libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library libbeckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -232,8 +255,10 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosi
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/cartesian_move__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/cartesian_move__type_support.cpp
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/gripper__type_support.cpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/head_rotation__type_support.cpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/dds_fastrtps/target_pose__type_support.cpp
+CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/head_rotation__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/beckhoff_interfaces/srv/detail/target_pose__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/student/ros_ws/RosSystem/build/beckhoff_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/ros_ws/RosSystem/src/beckhoff_interfaces /home/student/ros_ws/RosSystem/src/beckhoff_interfaces /home/student/ros_ws/RosSystem/build/beckhoff_interfaces /home/student/ros_ws/RosSystem/build/beckhoff_interfaces /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/CMakeFiles/beckhoff_interfaces__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)

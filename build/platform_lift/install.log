@@ -1,13 +1,13 @@
-/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/command.py
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/srvClient.py
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/lift_communication.py
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/serial_interface.py
+/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/lift_pilote.py
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/serial_communication.py
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__init__.py
-/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/command.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/srvClient.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/lift_communication.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/serial_interface.cpython-310.pyc
+/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/lift_pilote.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/serial_communication.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/__pycache__/__init__.cpython-310.pyc
 /home/student/ros_ws/RosSystem/install/platform_lift/share/ament_index/resource_index/packages/platform_lift
@@ -21,4 +21,5 @@
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift-0.0.0-py3.10.egg-info/PKG-INFO
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift/command
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift/lift_communication
+/home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift/pilote
 /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift/srv_client

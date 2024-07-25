@@ -201,7 +201,8 @@ def exch_serial(ser, cmd, option='', arg=0):
     finally:
         print(f'Thread {threading.current_thread().name} releasing semaphore')
         sem.release()
-    
+
+
     return success, data
 
 # No modification

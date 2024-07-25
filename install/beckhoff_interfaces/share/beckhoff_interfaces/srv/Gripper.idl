@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from beckhoff_interfaces/srv/Gripper.srv
+// generated code does not contain a copyright notice
+
+
+module beckhoff_interfaces {
+  module srv {
+    struct Gripper_Request {
+      boolean status;
+    };
+    struct Gripper_Response {
+      string feedback;
+    };
+  };
+};

@@ -37,7 +37,7 @@ void TargetPose_Request_fini_function(void * message_memory)
   typed_message->~TargetPose_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember TargetPose_Request_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember TargetPose_Request_message_member_array[5] = {
   {
     "dx",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -105,13 +105,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember TargetPose_Re
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "mode",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(beckhoff_interfaces::srv::TargetPose_Request, mode),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers TargetPose_Request_message_members = {
   "beckhoff_interfaces::srv",  // message namespace
   "TargetPose_Request",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(beckhoff_interfaces::srv::TargetPose_Request),
   TargetPose_Request_message_member_array,  // message members
   TargetPose_Request_init_function,  // function to initialize message memory (memory has to be allocated)

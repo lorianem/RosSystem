@@ -1,0 +1,38 @@
+[1.078s] Invoking command in '/home/student/ros_ws/RosSystem/src/platform_lift': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data
+[1.256s] Traceback (most recent call last):
+[1.257s]   File "/home/student/ros_ws/RosSystem/src/platform_lift/setup.py", line 1, in <module>
+[1.257s]     from setuptools import find_packages, setup
+[1.257s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[1.257s]     import setuptools.version
+[1.257s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.257s]     import pkg_resources
+[1.257s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[1.259s]     def _initialize_master_working_set():
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[1.259s]     f(*args, **kwargs)
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set
+[1.259s]     list(map(working_set.add_entry, sys.path))
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[1.259s]     for dist in find_distributions(entry, True):
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path
+[1.259s]     for dist in factory(fullpath):
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2142, in distributions_from_metadata
+[1.259s]     yield Distribution.from_location(
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2606, in from_location
+[1.259s]     )._reload_version()
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3004, in _reload_version
+[1.259s]     md_version = self._get_version()
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2785, in _get_version
+[1.259s]     version = _version_from_file(lines)
+[1.259s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2569, in _version_from_file
+[1.260s]     line = next(iter(version_lines), '')
+[1.260s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2780, in _get_metadata
+[1.260s]     for line in self.get_metadata_lines(name):
+[1.260s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1422, in get_metadata_lines
+[1.260s]     return yield_lines(self.get_metadata(name))
+[1.260s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1412, in get_metadata
+[1.260s]     value = self._get(path)
+[1.260s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1616, in _get
+[1.260s]     with open(path, 'rb') as stream:
+[1.260s] FileNotFoundError: [Errno 2] No such file or directory: '/home/student/ros_ws/RosSystem/install/beckhoff_interfaces/local/lib/python3.10/dist-packages/beckhoff_interfaces-0.0.0-py3.10.egg-info/PKG-INFO'
+[1.283s] Invoked command in '/home/student/ros_ws/RosSystem/src/platform_lift' returned '1': PYTHONPATH=/home/student/ros_ws/RosSystem/build/platform_lift/prefix_override:/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/platform_lift build --build-base /home/student/ros_ws/RosSystem/build/platform_lift/build install --record /home/student/ros_ws/RosSystem/build/platform_lift/install.log --single-version-externally-managed install_data

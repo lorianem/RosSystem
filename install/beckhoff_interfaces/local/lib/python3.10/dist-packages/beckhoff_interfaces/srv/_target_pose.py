@@ -61,6 +61,7 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
         '_dy',
         '_dz',
         '_vel',
+        '_mode',
     ]
 
     _fields_and_field_types = {
@@ -68,6 +69,7 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
         'dy': 'double',
         'dz': 'double',
         'vel': 'double',
+        'mode': 'string',
     }
 
     SLOT_TYPES = (
@@ -75,6 +77,7 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -85,6 +88,7 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
         self.dy = kwargs.get('dy', float())
         self.dz = kwargs.get('dz', float())
         self.vel = kwargs.get('vel', float())
+        self.mode = kwargs.get('mode', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -122,6 +126,8 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
         if self.dz != other.dz:
             return False
         if self.vel != other.vel:
+            return False
+        if self.mode != other.mode:
             return False
         return True
 
@@ -189,6 +195,19 @@ class TargetPose_Request(metaclass=Metaclass_TargetPose_Request):
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
                 "The 'vel' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._vel = value
+
+    @builtins.property
+    def mode(self):
+        """Message field 'mode'."""
+        return self._mode
+
+    @mode.setter
+    def mode(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'mode' field must be of type 'str'"
+        self._mode = value
 
 
 # Import statements for member types

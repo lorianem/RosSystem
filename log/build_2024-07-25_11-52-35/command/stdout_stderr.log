@@ -1,0 +1,48 @@
+running egg_info
+creating ../../build/command/command.egg-info
+writing ../../build/command/command.egg-info/PKG-INFO
+writing dependency_links to ../../build/command/command.egg-info/dependency_links.txt
+writing entry points to ../../build/command/command.egg-info/entry_points.txt
+writing requirements to ../../build/command/command.egg-info/requires.txt
+writing top-level names to ../../build/command/command.egg-info/top_level.txt
+writing manifest file '../../build/command/command.egg-info/SOURCES.txt'
+reading manifest file '../../build/command/command.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/command/command.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/student/ros_ws/RosSystem/build/command/build
+creating /home/student/ros_ws/RosSystem/build/command/build/lib
+creating /home/student/ros_ws/RosSystem/build/command/build/lib/command
+copying command/commandHeadRotation.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+copying command/commandGripper.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+copying command/commandAxis.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+copying command/commandLiftCollumn.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+copying command/__init__.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+running install
+running install_lib
+creating /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandHeadRotation.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandGripper.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandAxis.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandLiftCollumn.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/__init__.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandHeadRotation.py to commandHeadRotation.cpython-310.pyc
+byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandGripper.py to commandGripper.cpython-310.pyc
+byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandAxis.py to commandAxis.cpython-310.pyc
+byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandLiftCollumn.py to commandLiftCollumn.cpython-310.pyc
+byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/student/ros_ws/RosSystem/install/command/share/ament_index
+creating /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index
+creating /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index/packages
+copying resource/command -> /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index/packages
+copying package.xml -> /home/student/ros_ws/RosSystem/install/command/share/command
+running install_egg_info
+Copying ../../build/command/command.egg-info to /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command-0.0.0-py3.10.egg-info
+running install_scripts
+Installing commandAxis script to /home/student/ros_ws/RosSystem/install/command/lib/command
+Installing commandGripper script to /home/student/ros_ws/RosSystem/install/command/lib/command
+Installing commandHead script to /home/student/ros_ws/RosSystem/install/command/lib/command
+Installing commandLift script to /home/student/ros_ws/RosSystem/install/command/lib/command
+writing list of installed files to '/home/student/ros_ws/RosSystem/build/command/install.log'

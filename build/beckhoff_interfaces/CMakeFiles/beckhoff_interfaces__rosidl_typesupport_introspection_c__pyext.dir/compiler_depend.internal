@@ -258,6 +258,9 @@ CMakeFiles/beckhoff_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__type_support.h
  /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__struct.h
  /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/head_rotation__functions.h
+ /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/gripper__type_support.h
+ /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/gripper__struct.h
+ /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/srv/detail/gripper__functions.h
  /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/action/detail/move__type_support.h
  /home/student/ros_ws/RosSystem/build/beckhoff_interfaces/rosidl_generator_c/beckhoff_interfaces/action/detail/move__struct.h
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h

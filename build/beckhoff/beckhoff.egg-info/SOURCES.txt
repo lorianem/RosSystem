@@ -9,11 +9,10 @@ setup.py
 ../../build/beckhoff/beckhoff.egg-info/requires.txt
 ../../build/beckhoff/beckhoff.egg-info/top_level.txt
 ../../build/beckhoff/beckhoff.egg-info/zip-safe
-beckhoff/Communication.py
 beckhoff/__init__.py
+beckhoff/cinematic.py
 beckhoff/cinematicCommand.py
-beckhoff/cinematicRobot.py
-beckhoff/command.py
+beckhoff/communication.py
 beckhoff/listenerPos.py
 launch/launch.py
 resource/beckhoff

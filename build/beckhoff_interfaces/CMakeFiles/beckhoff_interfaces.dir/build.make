@@ -76,6 +76,9 @@ CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/CartesianMove_Response.msg
 CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/HeadRotation.srv
 CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/HeadRotation_Request.msg
 CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/HeadRotation_Response.msg
+CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/srv/Gripper.srv
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Gripper_Request.msg
+CMakeFiles/beckhoff_interfaces: rosidl_cmake/srv/Gripper_Response.msg
 CMakeFiles/beckhoff_interfaces: /home/student/ros_ws/RosSystem/src/beckhoff_interfaces/action/Move.action
 CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/beckhoff_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl

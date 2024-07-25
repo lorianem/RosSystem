@@ -10,6 +10,10 @@
 
 #include "rcutils/allocator.h"
 
+// Include directives for member types
+// Member `mode`
+#include "rosidl_runtime_c/string_functions.h"
+
 bool
 beckhoff_interfaces__srv__TargetPose_Request__init(beckhoff_interfaces__srv__TargetPose_Request * msg)
 {
@@ -20,6 +24,11 @@ beckhoff_interfaces__srv__TargetPose_Request__init(beckhoff_interfaces__srv__Tar
   // dy
   // dz
   // vel
+  // mode
+  if (!rosidl_runtime_c__String__init(&msg->mode)) {
+    beckhoff_interfaces__srv__TargetPose_Request__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -33,6 +42,8 @@ beckhoff_interfaces__srv__TargetPose_Request__fini(beckhoff_interfaces__srv__Tar
   // dy
   // dz
   // vel
+  // mode
+  rosidl_runtime_c__String__fini(&msg->mode);
 }
 
 bool
@@ -57,6 +68,12 @@ beckhoff_interfaces__srv__TargetPose_Request__are_equal(const beckhoff_interface
   if (lhs->vel != rhs->vel) {
     return false;
   }
+  // mode
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->mode), &(rhs->mode)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -76,6 +93,12 @@ beckhoff_interfaces__srv__TargetPose_Request__copy(
   output->dz = input->dz;
   // vel
   output->vel = input->vel;
+  // mode
+  if (!rosidl_runtime_c__String__copy(
+      &(input->mode), &(output->mode)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -261,7 +284,8 @@ beckhoff_interfaces__srv__TargetPose_Request__Sequence__copy(
 
 // Include directives for member types
 // Member `feedback`
-#include "rosidl_runtime_c/string_functions.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 bool
 beckhoff_interfaces__srv__TargetPose_Response__init(beckhoff_interfaces__srv__TargetPose_Response * msg)

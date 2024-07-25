@@ -13,6 +13,8 @@ module beckhoff_interfaces {
       double dz;
 
       double vel;
+
+      string mode;
     };
     struct TargetPose_Response {
       string feedback;

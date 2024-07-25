@@ -42,12 +42,13 @@ struct TargetPose_Request_
       this->dy = 0.0;
       this->dz = 0.0;
       this->vel = 0.0;
+      this->mode = "";
     }
   }
 
   explicit TargetPose_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : mode(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
@@ -55,6 +56,7 @@ struct TargetPose_Request_
       this->dy = 0.0;
       this->dz = 0.0;
       this->vel = 0.0;
+      this->mode = "";
     }
   }
 
@@ -71,6 +73,9 @@ struct TargetPose_Request_
   using _vel_type =
     double;
   _vel_type vel;
+  using _mode_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _mode_type mode;
 
   // setters for named parameter idiom
   Type & set__dx(
@@ -95,6 +100,12 @@ struct TargetPose_Request_
     const double & _arg)
   {
     this->vel = _arg;
+    return *this;
+  }
+  Type & set__mode(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->mode = _arg;
     return *this;
   }
 
@@ -150,6 +161,9 @@ struct TargetPose_Request_
       return false;
     }
     if (this->vel != other.vel) {
+      return false;
+    }
+    if (this->mode != other.mode) {
       return false;
     }
     return true;

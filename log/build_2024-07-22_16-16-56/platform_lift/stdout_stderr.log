@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/platform_lift/platform_lift.egg-info/PKG-INFO
+writing dependency_links to ../../build/platform_lift/platform_lift.egg-info/dependency_links.txt
+writing entry points to ../../build/platform_lift/platform_lift.egg-info/entry_points.txt
+writing requirements to ../../build/platform_lift/platform_lift.egg-info/requires.txt
+writing top-level names to ../../build/platform_lift/platform_lift.egg-info/top_level.txt
+reading manifest file '../../build/platform_lift/platform_lift.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/platform_lift/platform_lift.egg-info/SOURCES.txt'
+running build
+running build_py
+copying platform_lift/lift_communication.py -> /home/student/ros_ws/RosSystem/build/platform_lift/build/lib/platform_lift
+running install
+running install_lib
+copying /home/student/ros_ws/RosSystem/build/platform_lift/build/lib/platform_lift/lift_communication.py -> /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift
+byte-compiling /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift/lift_communication.py to lift_communication.cpython-310.pyc
+Sorry: IndentationError: unexpected indent (lift_communication.py, line 67)
+running install_data
+running install_egg_info
+removing '/home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/platform_lift/platform_lift.egg-info to /home/student/ros_ws/RosSystem/install/platform_lift/lib/python3.10/site-packages/platform_lift-0.0.0-py3.10.egg-info
+running install_scripts
+Installing command script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+Installing lift_communication script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+Installing srv_client script to /home/student/ros_ws/RosSystem/install/platform_lift/lib/platform_lift
+writing list of installed files to '/home/student/ros_ws/RosSystem/build/platform_lift/install.log'

@@ -21,16 +21,32 @@ namespace srv
 namespace builder
 {
 
+class Init_TargetPose_Request_mode
+{
+public:
+  explicit Init_TargetPose_Request_mode(::beckhoff_interfaces::srv::TargetPose_Request & msg)
+  : msg_(msg)
+  {}
+  ::beckhoff_interfaces::srv::TargetPose_Request mode(::beckhoff_interfaces::srv::TargetPose_Request::_mode_type arg)
+  {
+    msg_.mode = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::beckhoff_interfaces::srv::TargetPose_Request msg_;
+};
+
 class Init_TargetPose_Request_vel
 {
 public:
   explicit Init_TargetPose_Request_vel(::beckhoff_interfaces::srv::TargetPose_Request & msg)
   : msg_(msg)
   {}
-  ::beckhoff_interfaces::srv::TargetPose_Request vel(::beckhoff_interfaces::srv::TargetPose_Request::_vel_type arg)
+  Init_TargetPose_Request_mode vel(::beckhoff_interfaces::srv::TargetPose_Request::_vel_type arg)
   {
     msg_.vel = std::move(arg);
-    return std::move(msg_);
+    return Init_TargetPose_Request_mode(msg_);
   }
 
 private:

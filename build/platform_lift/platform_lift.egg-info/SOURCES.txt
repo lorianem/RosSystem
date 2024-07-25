@@ -10,8 +10,8 @@ setup.py
 ../../build/platform_lift/platform_lift.egg-info/top_level.txt
 ../../build/platform_lift/platform_lift.egg-info/zip-safe
 platform_lift/__init__.py
-platform_lift/command.py
 platform_lift/lift_communication.py
+platform_lift/lift_pilote.py
 platform_lift/serial_communication.py
 platform_lift/serial_interface.py
 platform_lift/srvClient.py

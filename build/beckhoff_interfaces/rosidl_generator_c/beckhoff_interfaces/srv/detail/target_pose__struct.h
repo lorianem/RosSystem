@@ -17,6 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'mode'
+#include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/TargetPose in the package beckhoff_interfaces.
 typedef struct beckhoff_interfaces__srv__TargetPose_Request
 {
@@ -24,6 +28,7 @@ typedef struct beckhoff_interfaces__srv__TargetPose_Request
   double dy;
   double dz;
   double vel;
+  rosidl_runtime_c__String mode;
 } beckhoff_interfaces__srv__TargetPose_Request;
 
 // Struct for a sequence of beckhoff_interfaces__srv__TargetPose_Request.
@@ -41,7 +46,8 @@ typedef struct beckhoff_interfaces__srv__TargetPose_Request__Sequence
 
 // Include directives for member types
 // Member 'feedback'
-#include "rosidl_runtime_c/string.h"
+// already included above
+// #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/TargetPose in the package beckhoff_interfaces.
 typedef struct beckhoff_interfaces__srv__TargetPose_Response

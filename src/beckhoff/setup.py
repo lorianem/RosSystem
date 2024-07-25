@@ -23,8 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'Communication = beckhoff.Communication:main',
-            'command = beckhoff.command:main',
+            'communication = beckhoff.communication:main',
             'listener = beckhoff.listenerPos:main',
             'plan = beckhoff.cinematicCommand:main',
         ],

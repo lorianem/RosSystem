@@ -1,0 +1,29 @@
+[1.054s] Invoking command in '/home/student/ros_ws/RosSystem/src/beckhoff': PYTHONPATH=/home/student/ros_ws/RosSystem/build/beckhoff/prefix_override:/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/beckhoff build --build-base /home/student/ros_ws/RosSystem/build/beckhoff/build install --record /home/student/ros_ws/RosSystem/build/beckhoff/install.log --single-version-externally-managed install_data
+[1.303s] running egg_info
+[1.304s] writing ../../build/beckhoff/beckhoff.egg-info/PKG-INFO
+[1.304s] writing dependency_links to ../../build/beckhoff/beckhoff.egg-info/dependency_links.txt
+[1.305s] writing entry points to ../../build/beckhoff/beckhoff.egg-info/entry_points.txt
+[1.305s] writing requirements to ../../build/beckhoff/beckhoff.egg-info/requires.txt
+[1.305s] writing top-level names to ../../build/beckhoff/beckhoff.egg-info/top_level.txt
+[1.307s] reading manifest file '../../build/beckhoff/beckhoff.egg-info/SOURCES.txt'
+[1.307s] adding license file 'LICENSE'
+[1.309s] writing manifest file '../../build/beckhoff/beckhoff.egg-info/SOURCES.txt'
+[1.309s] running build
+[1.309s] running build_py
+[1.309s] copying beckhoff/Communication.py -> /home/student/ros_ws/RosSystem/build/beckhoff/build/lib/beckhoff
+[1.309s] running install
+[1.310s] running install_lib
+[1.311s] copying /home/student/ros_ws/RosSystem/build/beckhoff/build/lib/beckhoff/Communication.py -> /home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages/beckhoff
+[1.312s] byte-compiling /home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages/beckhoff/Communication.py to Communication.cpython-310.pyc
+[1.314s] running install_data
+[1.314s] running install_egg_info
+[1.319s] removing '/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages/beckhoff-0.0.0-py3.10.egg-info' (and everything under it)
+[1.319s] Copying ../../build/beckhoff/beckhoff.egg-info to /home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages/beckhoff-0.0.0-py3.10.egg-info
+[1.320s] running install_scripts
+[1.345s] Installing Communication script to /home/student/ros_ws/RosSystem/install/beckhoff/lib/beckhoff
+[1.345s] Installing commandAxis script to /home/student/ros_ws/RosSystem/install/beckhoff/lib/beckhoff
+[1.345s] Installing commandHead script to /home/student/ros_ws/RosSystem/install/beckhoff/lib/beckhoff
+[1.345s] Installing listener script to /home/student/ros_ws/RosSystem/install/beckhoff/lib/beckhoff
+[1.345s] Installing plan script to /home/student/ros_ws/RosSystem/install/beckhoff/lib/beckhoff
+[1.345s] writing list of installed files to '/home/student/ros_ws/RosSystem/build/beckhoff/install.log'
+[1.386s] Invoked command in '/home/student/ros_ws/RosSystem/src/beckhoff' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/beckhoff/prefix_override:/home/student/ros_ws/RosSystem/install/beckhoff/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/beckhoff build --build-base /home/student/ros_ws/RosSystem/build/beckhoff/build install --record /home/student/ros_ws/RosSystem/build/beckhoff/install.log --single-version-externally-managed install_data

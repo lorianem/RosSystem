@@ -73,6 +73,7 @@ beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_target_pose.py
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move.py
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation.py
+beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_gripper.py
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/action/_move.py
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/msg/__init__.py
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/__init__.py
@@ -81,6 +82,7 @@ beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_target_pose_s.c
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c
+beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_gripper_s.c
 beckhoff_interfaces__py/CMakeFiles/beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/action/_move_s.c
 
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
@@ -100,6 +102,7 @@ rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesup
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/beckhoff_interfaces/srv/TargetPose.idl
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/beckhoff_interfaces/srv/CartesianMove.idl
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/beckhoff_interfaces/srv/HeadRotation.idl
+rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/beckhoff_interfaces/srv/Gripper.idl
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/beckhoff_interfaces/action/Move.idl
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -129,6 +132,9 @@ rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move.py: rosidl_generator
 rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation.py: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation.py
 
+rosidl_generator_py/beckhoff_interfaces/srv/_gripper.py: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/srv/_gripper.py
+
 rosidl_generator_py/beckhoff_interfaces/action/_move.py: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/action/_move.py
 
@@ -153,6 +159,9 @@ rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c: rosidl_generato
 rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c
 
+rosidl_generator_py/beckhoff_interfaces/srv/_gripper_s.c: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/srv/_gripper_s.c
+
 rosidl_generator_py/beckhoff_interfaces/action/_move_s.c: rosidl_generator_py/beckhoff_interfaces/_beckhoff_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/beckhoff_interfaces/action/_move_s.c
 
@@ -169,6 +178,8 @@ beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/msg/_position_s
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/__init__.py
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move.py
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_cartesian_move_s.c
+beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_gripper.py
+beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_gripper_s.c
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation.py
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_head_rotation_s.c
 beckhoff_interfaces__py: rosidl_generator_py/beckhoff_interfaces/srv/_target_pose.py

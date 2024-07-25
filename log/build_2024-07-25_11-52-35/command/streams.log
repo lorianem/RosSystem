@@ -1,0 +1,50 @@
+[1.165s] Invoking command in '/home/student/ros_ws/RosSystem/src/command': PYTHONPATH=/home/student/ros_ws/RosSystem/build/command/prefix_override:/home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/command build --build-base /home/student/ros_ws/RosSystem/build/command/build install --record /home/student/ros_ws/RosSystem/build/command/install.log --single-version-externally-managed install_data
+[1.400s] running egg_info
+[1.400s] creating ../../build/command/command.egg-info
+[1.400s] writing ../../build/command/command.egg-info/PKG-INFO
+[1.401s] writing dependency_links to ../../build/command/command.egg-info/dependency_links.txt
+[1.401s] writing entry points to ../../build/command/command.egg-info/entry_points.txt
+[1.401s] writing requirements to ../../build/command/command.egg-info/requires.txt
+[1.401s] writing top-level names to ../../build/command/command.egg-info/top_level.txt
+[1.401s] writing manifest file '../../build/command/command.egg-info/SOURCES.txt'
+[1.403s] reading manifest file '../../build/command/command.egg-info/SOURCES.txt'
+[1.404s] adding license file 'LICENSE'
+[1.404s] writing manifest file '../../build/command/command.egg-info/SOURCES.txt'
+[1.405s] running build
+[1.405s] running build_py
+[1.405s] creating /home/student/ros_ws/RosSystem/build/command/build
+[1.405s] creating /home/student/ros_ws/RosSystem/build/command/build/lib
+[1.405s] creating /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.406s] copying command/commandHeadRotation.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.406s] copying command/commandGripper.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.406s] copying command/commandAxis.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.406s] copying command/commandLiftCollumn.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.407s] copying command/__init__.py -> /home/student/ros_ws/RosSystem/build/command/build/lib/command
+[1.407s] running install
+[1.407s] running install_lib
+[1.407s] creating /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.407s] copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandHeadRotation.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.407s] copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandGripper.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.407s] copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandAxis.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.407s] copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/commandLiftCollumn.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.407s] copying /home/student/ros_ws/RosSystem/build/command/build/lib/command/__init__.py -> /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command
+[1.410s] byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandHeadRotation.py to commandHeadRotation.cpython-310.pyc
+[1.410s] byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandGripper.py to commandGripper.cpython-310.pyc
+[1.410s] byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandAxis.py to commandAxis.cpython-310.pyc
+[1.410s] byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/commandLiftCollumn.py to commandLiftCollumn.cpython-310.pyc
+[1.410s] byte-compiling /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command/__init__.py to __init__.cpython-310.pyc
+[1.410s] running install_data
+[1.410s] creating /home/student/ros_ws/RosSystem/install/command/share/ament_index
+[1.410s] creating /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index
+[1.410s] creating /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index/packages
+[1.411s] copying resource/command -> /home/student/ros_ws/RosSystem/install/command/share/ament_index/resource_index/packages
+[1.411s] copying package.xml -> /home/student/ros_ws/RosSystem/install/command/share/command
+[1.411s] running install_egg_info
+[1.413s] Copying ../../build/command/command.egg-info to /home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages/command-0.0.0-py3.10.egg-info
+[1.414s] running install_scripts
+[1.434s] Installing commandAxis script to /home/student/ros_ws/RosSystem/install/command/lib/command
+[1.434s] Installing commandGripper script to /home/student/ros_ws/RosSystem/install/command/lib/command
+[1.434s] Installing commandHead script to /home/student/ros_ws/RosSystem/install/command/lib/command
+[1.434s] Installing commandLift script to /home/student/ros_ws/RosSystem/install/command/lib/command
+[1.435s] writing list of installed files to '/home/student/ros_ws/RosSystem/build/command/install.log'
+[1.489s] Invoked command in '/home/student/ros_ws/RosSystem/src/command' returned '0': PYTHONPATH=/home/student/ros_ws/RosSystem/build/command/prefix_override:/home/student/ros_ws/RosSystem/install/command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/command build --build-base /home/student/ros_ws/RosSystem/build/command/build install --record /home/student/ros_ws/RosSystem/build/command/install.log --single-version-externally-managed install_data

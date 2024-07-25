@@ -19,7 +19,13 @@ def close_serial(ser):
     exch_serial(ser,"RA") 
     ser.close()
     
-
+def RO_cycle(ser):
+    success, _ = exch_serial(ser, "RO")
+    if(success):
+        print("RO send successfully")
+    else:
+        close_serial(ser)
+        return -1
 def get_pos_A1(ser):
     sucess, pos = exch_serial(ser,"RG", "position",0) 
     if(sucess):
@@ -27,6 +33,7 @@ def get_pos_A1(ser):
     else:
         close_serial(ser)
         return -1
+
 
 
 
@@ -58,6 +65,7 @@ def set_pos_A1(ser, pos):
 
 
 def set_pos_A2(ser, pos):
+
     if(not exch_serial(ser,"RT", "position_A2", pos)):
         close_serial(ser)
         return False
@@ -66,6 +74,7 @@ def set_pos_A2(ser, pos):
 
 
 def set_pos(ser,pos):
+
     if(not set_pos_A1(ser,pos/2)):
         return False
     if(not set_pos_A2(ser,pos/2)):
@@ -179,7 +188,7 @@ def send_cyclic(ser):
 
 def init_serial():
     #create serial communication
-    ser = serial.Serial(port='/dev/ttyUSB1',baudrate=38400,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS)
+    ser = serial.Serial(port='/dev/ttyUSB0',baudrate=38400,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS)
     print("Connected to serial: " + str(ser.is_open) )
     #enable to use ctrl-C to leave program and close communication
     def handler(signum, frame):

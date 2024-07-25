@@ -1,5 +1,6 @@
 [console_scripts]
 command = platform_lift.command:main
 lift_communication = platform_lift.lift_communication:main
+pilote = platform_lift.lift_pilote:main
 srv_client = platform_lift.srvClient:main
 

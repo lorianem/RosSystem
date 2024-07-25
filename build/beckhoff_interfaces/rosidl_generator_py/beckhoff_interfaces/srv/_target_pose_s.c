@@ -16,6 +16,9 @@
 #include "beckhoff_interfaces/srv/detail/target_pose__struct.h"
 #include "beckhoff_interfaces/srv/detail/target_pose__functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool beckhoff_interfaces__srv__target_pose__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -86,6 +89,21 @@ bool beckhoff_interfaces__srv__target_pose__request__convert_from_py(PyObject * 
     ros_message->vel = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
+  {  // mode
+    PyObject * field = PyObject_GetAttrString(_pymsg, "mode");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->mode, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -152,6 +170,23 @@ PyObject * beckhoff_interfaces__srv__target_pose__request__convert_to_py(void * 
       }
     }
   }
+  {  // mode
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->mode.data,
+      strlen(ros_message->mode.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "mode", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;
@@ -171,8 +206,10 @@ PyObject * beckhoff_interfaces__srv__target_pose__request__convert_to_py(void * 
 // already included above
 // #include "beckhoff_interfaces/srv/detail/target_pose__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
+// already included above
+// #include "rosidl_runtime_c/string.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT

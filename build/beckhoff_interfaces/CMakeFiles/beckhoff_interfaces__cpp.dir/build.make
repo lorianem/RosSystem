@@ -82,6 +82,10 @@ CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/sr
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__builder.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__struct.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__traits.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/gripper.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__builder.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__struct.hpp
+CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__traits.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__builder.hpp
 CMakeFiles/beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/action/detail/move__struct.hpp
@@ -106,6 +110,7 @@ rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckho
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/srv/TargetPose.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/srv/CartesianMove.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/srv/HeadRotation.idl
+rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/srv/Gripper.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: rosidl_adapter/beckhoff_interfaces/action/Move.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
@@ -162,6 +167,18 @@ rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__struct.hpp: r
 rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__traits.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__traits.hpp
 
+rosidl_generator_cpp/beckhoff_interfaces/srv/gripper.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/gripper.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__builder.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__builder.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__struct.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__struct.hpp
+
+rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__traits.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__traits.hpp
+
 rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp: rosidl_generator_cpp/beckhoff_interfaces/msg/position.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/beckhoff_interfaces/action/move.hpp
 
@@ -187,12 +204,16 @@ beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/cartesian
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__builder.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__struct.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/cartesian_move__traits.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__builder.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__struct.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/gripper__traits.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__builder.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__struct.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/head_rotation__traits.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__builder.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__struct.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/detail/target_pose__traits.hpp
+beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/gripper.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/head_rotation.hpp
 beckhoff_interfaces__cpp: rosidl_generator_cpp/beckhoff_interfaces/srv/target_pose.hpp
 beckhoff_interfaces__cpp: CMakeFiles/beckhoff_interfaces__cpp.dir/build.make

@@ -12,6 +12,10 @@
 #include "beckhoff_interfaces/srv/detail/target_pose__struct.h"
 
 
+// Include directives for member types
+// Member `mode`
+#include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -31,7 +35,7 @@ void beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspect
   beckhoff_interfaces__srv__TargetPose_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspection_c__TargetPose_Request_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspection_c__TargetPose_Request_message_member_array[5] = {
   {
     "dx",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -99,13 +103,30 @@ static rosidl_typesupport_introspection_c__MessageMember beckhoff_interfaces__sr
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "mode",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(beckhoff_interfaces__srv__TargetPose_Request, mode),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspection_c__TargetPose_Request_message_members = {
   "beckhoff_interfaces__srv",  // message namespace
   "TargetPose_Request",  // message name
-  4,  // number of fields
+  5,  // number of fields
   sizeof(beckhoff_interfaces__srv__TargetPose_Request),
   beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspection_c__TargetPose_Request_message_member_array,  // message members
   beckhoff_interfaces__srv__TargetPose_Request__rosidl_typesupport_introspection_c__TargetPose_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -153,7 +174,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 // Include directives for member types
 // Member `feedback`
-#include "rosidl_runtime_c/string_functions.h"
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
 extern "C"
