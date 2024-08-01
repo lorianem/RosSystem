@@ -24,6 +24,8 @@ setup(
             'commandHead = command.commandHeadRotation:main',
             'commandGripper = command.commandGripper:main',
             'commandLift = command.commandLiftCollumn:main',
+            'getPosLift = command.srvClient:main',
+            'listenerPosAxis = beckhoff.listenerPos:main',
         ],
     },
 )

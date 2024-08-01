@@ -1,5 +1,0 @@
-[console_scripts]
-communication = beckhoff.communication:main
-listener = beckhoff.listenerPos:main
-plan = beckhoff.cinematicCommand:main
-

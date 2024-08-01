@@ -1,6 +1,0 @@
-action/MoveLift.action
-action/MoveLift.idl
-srv/PositionLift.idl
-srv/PositionLift.srv
-srv/PositionLift_Request.msg
-srv/PositionLift_Response.msg

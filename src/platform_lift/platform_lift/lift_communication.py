@@ -90,11 +90,6 @@ def main(args=None):
 
     move_lift_server = MoveLiftServer()
     rclpy.spin(move_lift_server)
-    
-    #service = move_lift_server.create_service(PositionLift, 'posLift', sent_position)
-
-    #executor = rclpy.executors.MultiThreadedExecutor()
-    
 
     rclpy.shutdown()
 

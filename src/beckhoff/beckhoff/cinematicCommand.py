@@ -66,11 +66,7 @@ class KinematicCommand(Node):
         return rs        
     
     def send_request(self,dx, dy,dz, vel, acc, mode):
-        #future = self.send_request_lift_axis()
-        #rclpy.spin_until_future_complete(self, future)
-        #response = future.result()
-
-        #self.z = response.position
+        #self.get_Z_Position()
         self.get_logger().info('Actual pos : x : "%f", y : "%f",z : "%f"' % (self.x,self.y,self.z))
         t_axes, p_axes, v_axes, a_axes, time = kinematicPlan (self.x,self.y,self.z, dx,dy,dz, vel, acc, mode)
         self.req.x = float(p_axes[0][-1])
@@ -88,6 +84,13 @@ class KinematicCommand(Node):
         self.z = p_axes[2][-1]
         
         return self.cli.call_async(self.req) 
+    
+    def get_Z_Position(self):
+        #future = self.send_request_lift_axis()
+        #rclpy.spin_until_future_complete(self, future)
+        #response = future.result()
+        #self.z = response.position
+        return 1
     
     def listener_callback(self, msg):
         self.x, self.y, self.r = msg.x,msg.y,msg.r

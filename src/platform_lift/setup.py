@@ -21,8 +21,6 @@ setup(
     entry_points={
         'console_scripts': [
             'lift_communication = platform_lift.lift_communication:main',
-            'command = platform_lift.command:main',
-            'srv_client = platform_lift.srvClient:main',
             'pilote = platform_lift.lift_pilote:main',
         ],
     },
