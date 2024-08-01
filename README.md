@@ -1,10 +1,11 @@
 # TOMATO ROBOT (TOBOT)
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ## Presentation 
 
 This robot is built to work in above-ground tomato fields. It is designed to pass between rows of tomatoes to perform various manipulations. This repository contains all the ROS2 programs for controlling the Cartesian manipulator. This project was completed during my internship at the RoboLab of the Faculty of Electrical Engineering, University of Ljubljana.
 
-[images ]
+![Description de l'image](doc/image/robot.jpg)
 
 
 ## Table of Contents
@@ -87,15 +88,9 @@ You can verify that the SDK is correctly installed by running an example provide
 realsense-viewer
 ```
 
-#### Step 6: Install Python Packages (Optional)
-
-If you wish to use the Python bindings for RealSense, install them with pip:
-
-```bash
-pip install pyrealsense2==2.54.2
-```
 
 ### Python Libraries 
+
 
 | Library   | Pip Installation Command  | Current Version |
 | ------------- |:-------------:|------------- |
@@ -106,6 +101,8 @@ pip install pyrealsense2==2.54.2
 | realsense viewer     | ```pip install pyrealsense2==2.54.2```    | 2.54.2 |
 | Scipy | ```pip install scipy``` | 1.8.0 |
 | PyADS | ```pip install pyads``` | |
+
+
 
 ### Project Installation
 
@@ -127,15 +124,7 @@ After cloning the repository, navigate to the project directory.
 cd RosSystem
 ```
 
-#### Step 3: Install ROS2 Packages
-
-Make sure you have ROS2 Humble installed on your system. If not, follow the [ROS2 Humble installation guide](https://docs.ros.org/en/humble/Installation.html). Once ROS2 is installed, install the required ROS2 packages for the project.
-
-```bash
-rosdep install -i --from-path src --rosdistro humble -y
-```
-
-#### Step 4: Build the Project
+#### Step 3: Build the Project & Source the Environment
 
 Build the project using `colcon` to compile all the packages and dependencies.
 
@@ -143,15 +132,13 @@ Build the project using `colcon` to compile all the packages and dependencies.
 colcon build
 ```
 
-#### Step 5: Source the Environment
-
 After building the project, source the environment to overlay this workspace on top of your current ROS2 installation.
 
 ```bash
 source install/local_setup.bash
 ```
 
-#### Step 6: Run the Project
+#### Step 4: Run the Project
 
 Now you can run the various nodes and services defined in the project. For example, to start a particular node:
 
@@ -293,3 +280,14 @@ Feedback:
 #### Node 
 
 ### Camera 
+#### Node 
+
+##### Camera 
+
+This node is used to automatically control the robot with a RealSense L515 camera. It works with functions defined in the file `camera_function.py`.
+
+Steps:
+1. `RS_burstMulti` determines the centers of each hook using a histogram of the positions of all points from the depth camera.
+2. `getNextPeak` provides the relative position of the next peak, based on the positions determined in step 1.
+3. The robot moves closer to the hooks and uses `RS_burst_find_closest` to find the closest point in front of it. Be careful, the robot may not detect the hook if it is too close.
+4. Manipulate the hooks and go back to step 2.
