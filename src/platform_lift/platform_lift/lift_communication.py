@@ -4,10 +4,10 @@
 This program allows the communication between ROS and the lift
 
 Action server:
-    /moveLift (MoveLift): move the lift to the desired position
+    /moveLift (MoveLift): move the lift to the desired position (mm)
     
 Service server:
-    /posLift (PositionLift): return position of the lift
+    /posLift (PositionLift): return position of the lift (mm)
     
 ==============================================================="""
 
@@ -89,6 +89,7 @@ def main(args=None):
     ser = init_serial()
 
     move_lift_server = MoveLiftServer()
+    rclpy.spin(move_lift_server)
     rclpy.spin(move_lift_server)
 
     rclpy.shutdown()
