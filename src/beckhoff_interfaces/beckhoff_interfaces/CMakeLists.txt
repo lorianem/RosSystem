@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CartesianMove.srv"
   "srv/HeadRotation.srv"
   "srv/Gripper.srv"
+  "action/Move.action"
 )
 
 if(BUILD_TESTING)

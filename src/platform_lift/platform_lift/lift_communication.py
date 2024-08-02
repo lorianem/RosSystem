@@ -80,6 +80,7 @@ class MoveLiftServer(Node):
         if pos == -1:
             pos = 9999
         response.position = int(pos)
+        print("pouet")
         return response
 
 
@@ -90,7 +91,7 @@ def main(args=None):
 
     move_lift_server = MoveLiftServer()
     rclpy.spin(move_lift_server)
-    rclpy.spin(move_lift_server)
+
 
     rclpy.shutdown()
 

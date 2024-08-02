@@ -1,12 +1,12 @@
 # TOMATO ROBOT (TOBOT)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
 ## Presentation 
 
 This robot is built to work in above-ground tomato fields. It is designed to pass between rows of tomatoes to perform various manipulations. This repository contains all the ROS2 programs for controlling the Cartesian manipulator. This project was completed during my internship at the RoboLab of the Faculty of Electrical Engineering, University of Ljubljana.
 
-![Description de l'image](doc/image/robot.jpg)
-
+![Robot Image](doc/image/robot.jpg)
 
 ## Table of Contents
 - [Project Title](#tomato-robot-tobot)
@@ -88,21 +88,17 @@ You can verify that the SDK is correctly installed by running an example provide
 realsense-viewer
 ```
 
-
 ### Python Libraries 
-
 
 | Library   | Pip Installation Command  | Current Version |
 | ------------- |:-------------:|------------- |
-| numpy     | ```pip install "numpy >= 1.17.3, <1.25.0" ```   | 1.24.0 |
-| openCV      | ```pip install opencv-python```    | |
-| open3D     | ```pip install open3d```    | |
-| matplotlib     | ```pip install matplotlib```    | |
+| numpy     | ```pip install "numpy >= 1.17.3, <1.25.0"```   | 1.24.0 |
+| openCV      | ```pip install opencv-python```    |  |
+| open3D     | ```pip install open3d```    |  |
+| matplotlib     | ```pip install matplotlib```    |  |
 | realsense viewer     | ```pip install pyrealsense2==2.54.2```    | 2.54.2 |
-| Scipy | ```pip install scipy``` | 1.8.0 |
-| PyADS | ```pip install pyads``` | |
-
-
+| scipy | ```pip install scipy``` | 1.8.0 |
+| pyADS | ```pip install pyads``` |  |
 
 ### Project Installation
 
@@ -148,13 +144,11 @@ ros2 run <package_name> <node_name>
 
 Replace `<package_name>` with the actual package name and `<node_name>` with the specific node you want to run.
 
-
 ## ROS Packages Description  
 
 ### Beckhoff 
 
-This packages manages the communication with the beckhoff module, to move the different axis, the rotation of the head and the gripper.
-This communication is done with PyADS to communicate via PLC to beckhoff. 
+This package manages the communication with the Beckhoff module, to move the different axes, the rotation of the head, and the gripper. This communication is done with PyADS to communicate via PLC to Beckhoff. 
 
 #### Interfaces
 
@@ -164,84 +158,98 @@ This communication is done with PyADS to communicate via PLC to beckhoff.
 - [Gripper.srv](#gripper-service)
 - [Position.msg](#position-message)
   
-##### Target Pose service 
+##### Target Pose Service 
 
 Request:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| dx | float 64    | deplacement of robot selon X (mm)|
-| dy | float 64    | deplacement of robot selon Y (mm) |
-| dz | float 64    | deplacement of robot selon Z (mm)|
-| vel | float 64    | max velocity desire (mm/s)|
-| mode | string   | choose the type of the description of the movement r = relative / a = absolute |
+| dx | float64    | displacement of the robot along X (mm) |
+| dy | float64    | displacement of the robot along Y (mm) |
+| dz | float64    | displacement of the robot along Z (mm) |
+| vel | float64    | desired max velocity (mm/s) |
+| mode | string   | movement type: `r` = relative, `a` = absolute |
 
 Response:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
 | feedback | string  | |
 
-##### Cartesian Move service 
+##### Cartesian Move Service 
 
 Request:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| x | float 64    | final X postion (mm)|
-| y | float 64    | final Y postion (mm)|
-| z | float 64    | final Z postion (mm)|
-| vel_x | float 64    | velocity of the x axis (mm/s)|
-| vel_y | float 64    | velocity of the y axis (mm/s)|
-| vel_z | float 64    | velocity of the z axis (mm/s)|
-| acc_x | float 64    | acceleration of the x axis (mm/s)|
-| acc_y | float 64    | acceleration of the y axis (mm/s)|
-| acc_z | float 64    | acceleration of the z axis (mm/s)|
+| x | float64    | final X position (mm) |
+| y | float64    | final Y position (mm) |
+| z | float64    | final Z position (mm) |
+| vel_x | float64    | velocity of the x-axis (mm/s) |
+| vel_y | float64    | velocity of the y-axis (mm/s) |
+| vel_z | float64    | velocity of the z-axis (mm/s) |
+| acc_x | float64    | acceleration of the x-axis (mm/s²) |
+| acc_y | float64    | acceleration of the y-axis (mm/s²) |
+| acc_z | float64    | acceleration of the z-axis (mm/s²) |
 
 Response:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
 | feedback | string  | |
 
-##### Head service 
+##### Head Service 
 
 Request:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| deg | float 64    | deg of rotation of the head (deg)|
-| vel | float 64    | max velocity desire (deg/s)|
+| deg | float64    | degrees of rotation of the head (°) |
+| vel | float64    | desired max velocity (°/s) |
 
 Response:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
 | feedback | string  | |
 
-##### Gripper service 
+##### Gripper Service 
 
 Request:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| status | boolean  | Status of the gripper, false = close / true = open |
+| status | boolean  | status of the gripper, `false` = close, `true` = open |
 
 Response:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
 | feedback | string  | |
 
-##### Position message 
+##### Position Message 
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| x | float 64    | actual X postion (mm)|
-| y | float 64    | actual Y postion (mm)|
-| r | float 64    | actual R postion (mm)|
+| x | float64    | actual X position (mm) |
+| y | float64    | actual Y position (mm) |
+| r | float64    | actual R position (mm) |
 
 #### Nodes 
+
+##### Communication 
+
+Coordinate system:
+
+<img src="doc/image/module.png" alt="module coordinates" width="400">
+
+This package connects to these interfaces:
+  - [Cartesian Move Service](#cartesian-move-service)
+  - [Head Service](#head-service)
+  - [Gripper Service](#gripper-service)
+  - [Position Message](#position-message)
+
+The communication node sends all the values at once via an array to Beckhoff. To communicate via PyADS from an external PC, you need to add a new Route on TwinCAT. Follow the steps [here](https://github.com/stlehmann/pyads/issues/281#issuecomment-956370290).
 
 ### Platform Lift 
 
@@ -251,40 +259,44 @@ Response:
 
 Request: 
 ``` none ```
+
 Response: 
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| x | float 64    | actual X postion (mm)|
+| x | float64    | actual X position (mm) |
 
-##### MoveLiftAction 
+##### Move Lift Action 
 
 Request:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
+
+
 | ------------- |:-------------:|------------- |
-| goal_position | unit16  | z goal position |
+| goal_position | uint16  | z goal position |
 
 Response:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| sucess | bool  | |
+| success | bool  | |
 
 Feedback:
 
-|  Name   | Type | description |
+|  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| current_position | unit16  | current position z |
-
-#### Node 
+| current_position | uint16  | current position z |
 
 ### Camera 
+
 #### Node 
 
 ##### Camera 
 
-This node is used to automatically control the robot with a RealSense L515 camera. It works with functions defined in the file `camera_function.py`.
+This node is used to automatically control the robot with a RealSense L515 camera connected via USB 3.1 or higher. It works with functions defined in the file `camera_function.py`. The robot uses this node to detect and manipulate tomato hooks based on depth data.
+
+<img src="doc/image/camera.png" alt="camera coordinates" width="400" height="400"> <img src="doc/image/hook.jpg" alt="hook" width="400" height="400">
 
 Steps:
 1. `RS_burstMulti` determines the centers of each hook using a histogram of the positions of all points from the depth camera.

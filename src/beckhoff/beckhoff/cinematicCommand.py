@@ -7,9 +7,9 @@
 # Description 
 # -----------------------------------------------
 #
-# Node to converte a goal postion on a cinematic plan 
+# Node to convert a goal position on a kinematic plan 
 # 
-# entry : actual postion (x, y, z), final postion (dx, dy, dz), type of final postion a : absolute, r : relative 
+# entry : actual position (x, y, z), final position (dx, dy, dz), type of final position a : absolute, r : relative 
 # exit : all information about planning plan 
 #
 # -----------------------------------------------
@@ -46,8 +46,7 @@ class KinematicCommand(Node):
         # Creation service ROS
         self.srv = self.create_service(TargetPose, 'target_pose', self.target_pose_callback)
         
-        
-        # Création Subscriber to get the actual position 
+        # Creation Subscriber to get the actual position 
         self.subscription = self.create_subscription(
             Position,
             'rt_position',
@@ -55,8 +54,6 @@ class KinematicCommand(Node):
             10)
         self.subscription  # prevent unused variable warning
 
-    def send_request_lift_axis(self):
-        return self.cliLift.call_async(self.reqLift)
     
     def target_pose_callback(self, rq, rs):
         accRef = 5000
@@ -65,35 +62,37 @@ class KinematicCommand(Node):
         rs.feedback = 'ok'
         return rs        
     
-    def send_request(self,dx, dy,dz, vel, acc, mode):
-        #self.get_Z_Position()
+    def send_request(self, dx, dy, dz, vel, acc, mode):
+        self.get_Z_Position()
         self.get_logger().info('Actual pos : x : "%f", y : "%f",z : "%f"' % (self.x,self.y,self.z))
-        t_axes, p_axes, v_axes, a_axes, time = kinematicPlan (self.x,self.y,self.z, dx,dy,dz, vel, acc, mode)
+        t_axes, p_axes, v_axes, a_axes, time = kinematicPlan(self.x, self.y, self.z, dx, dy, dz, vel, acc, mode)
         self.req.x = float(p_axes[0][-1])
         self.req.y = float(p_axes[1][-1])
         self.req.z = float(p_axes[2][-1])
     
         self.req.vel_x = float(v_axes[0])
-        self.req.vel_y= float(v_axes[1])
+        self.req.vel_y = float(v_axes[1])
         self.req.vel_z = float(v_axes[2])
         
         self.req.acc_x = float(a_axes[0])
-        self.req.acc_y= float(a_axes[1])
-        self.req.acc_z= float(a_axes[2])
+        self.req.acc_y = float(a_axes[1])
+        self.req.acc_z = float(a_axes[2])
         
         self.z = p_axes[2][-1]
         
         return self.cli.call_async(self.req) 
     
+    def send_request_lift_axis(self):
+        rs = self.cliLift.call(self.reqLift)
+        print("ok")
+        return 0
+    
     def get_Z_Position(self):
-        #future = self.send_request_lift_axis()
-        #rclpy.spin_until_future_complete(self, future)
-        #response = future.result()
-        #self.z = response.position
-        return 1
+        self.z = self.send_request_lift_axis()
+        return None
     
     def listener_callback(self, msg):
-        self.x, self.y, self.r = msg.x,msg.y,msg.r
+        self.x, self.y, self.r = msg.x, msg.y, msg.r
         #self.get_logger().info('Actual pos : x : "%f", y : "%f",r : "%f"' % (msg.x,msg.y,msg.r))
 
 
@@ -106,5 +105,6 @@ def main():
 
     kinematic_command.destroy_node()
     rclpy.shutdown()
+
 if __name__ == '__main__':
     main()
