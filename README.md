@@ -21,6 +21,7 @@ This robot is built to work in above-ground tomato fields. It is designed to pas
   - [Beckhoff](#beckhoff)
   - [Platform Lift](#platform-lift)
   - [Camera](#camera)
+  - [Command](#command)
 
 ## Installation 
 
@@ -219,7 +220,7 @@ Request:
 
 |  Name   | Type | Description |
 | ------------- |:-------------:|------------- |
-| status | boolean  | status of the gripper, `false` = close, `true` = open |
+| status | boolean  | status of the gripper, `false` = open, `true` = close |
 
 Response:
 
@@ -253,9 +254,11 @@ The communication node sends all the values at once via an array to Beckhoff. To
 
 ### Platform Lift 
 
+This package manages the control of the TLT10-CX axis connected to an SCU (Servo Control Unit) via USB, using serial communication. The lift allows for vertical movement to adjust the height of the robot's platform.
+
 #### Interfaces
 
-##### Position Lift Service 
+##### Position Lift Message
 
 Request: 
 ``` none ```
@@ -271,8 +274,6 @@ Response:
 Request:
 
 |  Name   | Type | Description |
-
-
 | ------------- |:-------------:|------------- |
 | goal_position | uint16  | z goal position |
 
@@ -288,18 +289,50 @@ Feedback:
 | ------------- |:-------------:|------------- |
 | current_position | uint16  | current position z |
 
+#### Nodes
+
+##### Lift Communication
+
+The `lift_communication.py` node of the package allows communication with the SCU control unit through the RS232 serial interface that manages the lift actuators. It implements a `/moveLift` action server that moves the lift to the desired position and sends a success message when reaching the final position. It also implements a `/posLift` service that returns the position of the lift.
+
+To use this node, add the following line to your launch file:
+
+```xml
+<node pkg="platform_lift" type="lift_communication.py" name="lift_communication"/>
+```
+
+You may need to change the port for serial communication, which is currently set to `/dev/ttyUSB0` in the `init_serial()` function of `serial_interface.py`.
+
+This package connects to these interfaces:
+ - [Position Lift Message](#position-lift-message)
+ - [Move Lift Action](#move-lift-action)
+
 ### Camera 
 
-#### Node 
+This node is used to automatically control the robot with a RealSense L515 camera(s) connected via USB 3.1 or higher. 
+
+<img src="doc/image/camera.png" alt="camera coordinates" width="400" height="400"> <img src="doc/image/hook.jpg" alt="hook" width="400" height="400">
 
 ##### Camera 
 
-This node is used to automatically control the robot with a RealSense L515 camera connected via USB 3.1 or higher. It works with functions defined in the file `camera_function.py`. The robot uses this node to detect and manipulate tomato hooks based on depth data.
-
-<img src="doc/image/camera.png" alt="camera coordinates" width="400" height="400"> <img src="doc/image/hook.jpg" alt="hook" width="400" height="400">
+This works with functions defined in the file `camera_function.py`. The robot uses this node to detect and manipulate tomato hooks based on depth data.
 
 Steps:
 1. `RS_burstMulti` determines the centers of each hook using a histogram of the positions of all points from the depth camera.
 2. `getNextPeak` provides the relative position of the next peak, based on the positions determined in step 1.
 3. The robot moves closer to the hooks and uses `RS_burst_find_closest` to find the closest point in front of it. Be careful, the robot may not detect the hook if it is too close.
 4. Manipulate the hooks and go back to step 2.
+
+This package connects to these interfaces:
+- [Target Pose Service](#target-pose-service)
+
+### Command 
+
+This package is used for testing and visualization, allowing you to see all the interfaces and independently command everything. For each command, the argument is the values of the request of each interface.
+
+- **Command Axis** : Move the axis via the target pose service 
+- **Command Lift** : Move lift axis via lift action
+- **Command Head** : Rotate the head via head rotation service
+- **Command Gripper**: Close/Open the gripper via gripper service
+- **getPosLift** : Service to get the current position of the Z axis 
+- **listenerPosAxis** : Listener for the current position of Beckhoff axis
